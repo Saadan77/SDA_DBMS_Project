@@ -30,14 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lovely));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLeave = new System.Windows.Forms.Button();
+            this.btnPcalculation = new System.Windows.Forms.Button();
+            this.btnPprocessing = new System.Windows.Forms.Button();
+            this.btnAttendance = new System.Windows.Forms.Button();
+            this.btnReporting = new System.Windows.Forms.Button();
             this.btnManagement = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.btnReporting = new System.Windows.Forms.Button();
-            this.btnAttendance = new System.Windows.Forms.Button();
-            this.btnPprocessing = new System.Windows.Forms.Button();
-            this.btnPcalculation = new System.Windows.Forms.Button();
-            this.btnLeave = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.btnCloseChildForm = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panelDesktopPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,8 +60,95 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 490);
+            this.panel1.Size = new System.Drawing.Size(220, 561);
             this.panel1.TabIndex = 0;
+            // 
+            // btnLeave
+            // 
+            this.btnLeave.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLeave.FlatAppearance.BorderSize = 0;
+            this.btnLeave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLeave.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnLeave.Image = ((System.Drawing.Image)(resources.GetObject("btnLeave.Image")));
+            this.btnLeave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLeave.Location = new System.Drawing.Point(0, 380);
+            this.btnLeave.Name = "btnLeave";
+            this.btnLeave.Size = new System.Drawing.Size(220, 60);
+            this.btnLeave.TabIndex = 6;
+            this.btnLeave.Text = "   Leave Management";
+            this.btnLeave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLeave.UseVisualStyleBackColor = true;
+            this.btnLeave.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // btnPcalculation
+            // 
+            this.btnPcalculation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPcalculation.FlatAppearance.BorderSize = 0;
+            this.btnPcalculation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPcalculation.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPcalculation.Image = ((System.Drawing.Image)(resources.GetObject("btnPcalculation.Image")));
+            this.btnPcalculation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPcalculation.Location = new System.Drawing.Point(0, 320);
+            this.btnPcalculation.Name = "btnPcalculation";
+            this.btnPcalculation.Size = new System.Drawing.Size(220, 60);
+            this.btnPcalculation.TabIndex = 5;
+            this.btnPcalculation.Text = "   Payroll Calculation";
+            this.btnPcalculation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPcalculation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPcalculation.UseVisualStyleBackColor = true;
+            this.btnPcalculation.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btnPprocessing
+            // 
+            this.btnPprocessing.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPprocessing.FlatAppearance.BorderSize = 0;
+            this.btnPprocessing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPprocessing.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPprocessing.Image = ((System.Drawing.Image)(resources.GetObject("btnPprocessing.Image")));
+            this.btnPprocessing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPprocessing.Location = new System.Drawing.Point(0, 260);
+            this.btnPprocessing.Name = "btnPprocessing";
+            this.btnPprocessing.Size = new System.Drawing.Size(220, 60);
+            this.btnPprocessing.TabIndex = 4;
+            this.btnPprocessing.Text = "   Payroll Processing";
+            this.btnPprocessing.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPprocessing.UseVisualStyleBackColor = true;
+            this.btnPprocessing.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnAttendance
+            // 
+            this.btnAttendance.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAttendance.FlatAppearance.BorderSize = 0;
+            this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAttendance.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnAttendance.Image = ((System.Drawing.Image)(resources.GetObject("btnAttendance.Image")));
+            this.btnAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAttendance.Location = new System.Drawing.Point(0, 200);
+            this.btnAttendance.Name = "btnAttendance";
+            this.btnAttendance.Size = new System.Drawing.Size(220, 60);
+            this.btnAttendance.TabIndex = 3;
+            this.btnAttendance.Text = "   Attendance";
+            this.btnAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAttendance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAttendance.UseVisualStyleBackColor = true;
+            this.btnAttendance.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnReporting
+            // 
+            this.btnReporting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReporting.FlatAppearance.BorderSize = 0;
+            this.btnReporting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporting.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnReporting.Image = ((System.Drawing.Image)(resources.GetObject("btnReporting.Image")));
+            this.btnReporting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReporting.Location = new System.Drawing.Point(0, 140);
+            this.btnReporting.Name = "btnReporting";
+            this.btnReporting.Size = new System.Drawing.Size(220, 60);
+            this.btnReporting.TabIndex = 2;
+            this.btnReporting.Text = "   Reporting and Analytics";
+            this.btnReporting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReporting.UseVisualStyleBackColor = true;
+            this.btnReporting.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnManagement
             // 
@@ -77,108 +171,85 @@
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelLogo.Controls.Add(this.label1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(220, 80);
             this.panelLogo.TabIndex = 0;
             // 
-            // btnReporting
+            // label1
             // 
-            this.btnReporting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReporting.FlatAppearance.BorderSize = 0;
-            this.btnReporting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporting.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnReporting.Image = ((System.Drawing.Image)(resources.GetObject("btnReporting.Image")));
-            this.btnReporting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReporting.Location = new System.Drawing.Point(0, 140);
-            this.btnReporting.Name = "btnReporting";
-            this.btnReporting.Size = new System.Drawing.Size(220, 60);
-            this.btnReporting.TabIndex = 2;
-            this.btnReporting.Text = "   Reporting and Analytics";
-            this.btnReporting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReporting.UseVisualStyleBackColor = true;
-            this.btnReporting.Click += new System.EventHandler(this.button2_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.Location = new System.Drawing.Point(25, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(174, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Employee Payroll System";
             // 
-            // btnAttendance
+            // panelTitleBar
             // 
-            this.btnAttendance.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAttendance.FlatAppearance.BorderSize = 0;
-            this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAttendance.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAttendance.Image = ((System.Drawing.Image)(resources.GetObject("btnAttendance.Image")));
-            this.btnAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAttendance.Location = new System.Drawing.Point(0, 200);
-            this.btnAttendance.Name = "btnAttendance";
-            this.btnAttendance.Size = new System.Drawing.Size(220, 60);
-            this.btnAttendance.TabIndex = 3;
-            this.btnAttendance.Text = "   Attendance";
-            this.btnAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAttendance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAttendance.UseVisualStyleBackColor = true;
-            this.btnAttendance.Click += new System.EventHandler(this.button3_Click);
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelTitleBar.Controls.Add(this.btnCloseChildForm);
+            this.panelTitleBar.Controls.Add(this.lblTitle);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(793, 80);
+            this.panelTitleBar.TabIndex = 1;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
-            // btnPprocessing
+            // btnCloseChildForm
             // 
-            this.btnPprocessing.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPprocessing.FlatAppearance.BorderSize = 0;
-            this.btnPprocessing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPprocessing.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPprocessing.Image = ((System.Drawing.Image)(resources.GetObject("btnPprocessing.Image")));
-            this.btnPprocessing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPprocessing.Location = new System.Drawing.Point(0, 260);
-            this.btnPprocessing.Name = "btnPprocessing";
-            this.btnPprocessing.Size = new System.Drawing.Size(220, 60);
-            this.btnPprocessing.TabIndex = 4;
-            this.btnPprocessing.Text = "   Payroll Processing";
-            this.btnPprocessing.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPprocessing.UseVisualStyleBackColor = true;
-            this.btnPprocessing.Click += new System.EventHandler(this.button4_Click);
+            this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
+            this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseChildForm.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseChildForm.Image")));
+            this.btnCloseChildForm.Location = new System.Drawing.Point(718, 0);
+            this.btnCloseChildForm.Name = "btnCloseChildForm";
+            this.btnCloseChildForm.Size = new System.Drawing.Size(75, 80);
+            this.btnCloseChildForm.TabIndex = 1;
+            this.btnCloseChildForm.UseVisualStyleBackColor = true;
+            this.btnCloseChildForm.Click += new System.EventHandler(this.btnCloseChildForm_Click);
             // 
-            // btnPcalculation
+            // lblTitle
             // 
-            this.btnPcalculation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPcalculation.FlatAppearance.BorderSize = 0;
-            this.btnPcalculation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPcalculation.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPcalculation.Image = ((System.Drawing.Image)(resources.GetObject("btnPcalculation.Image")));
-            this.btnPcalculation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPcalculation.Location = new System.Drawing.Point(0, 320);
-            this.btnPcalculation.Name = "btnPcalculation";
-            this.btnPcalculation.Size = new System.Drawing.Size(220, 60);
-            this.btnPcalculation.TabIndex = 5;
-            this.btnPcalculation.Text = "   Payroll Calculation";
-            this.btnPcalculation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPcalculation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPcalculation.UseVisualStyleBackColor = true;
-            this.btnPcalculation.Click += new System.EventHandler(this.button5_Click);
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(342, 25);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(78, 26);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "HOME";
             // 
-            // btnLeave
+            // panelDesktopPanel
             // 
-            this.btnLeave.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLeave.FlatAppearance.BorderSize = 0;
-            this.btnLeave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLeave.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnLeave.Image = ((System.Drawing.Image)(resources.GetObject("btnLeave.Image")));
-            this.btnLeave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLeave.Location = new System.Drawing.Point(0, 380);
-            this.btnLeave.Name = "btnLeave";
-            this.btnLeave.Size = new System.Drawing.Size(220, 60);
-            this.btnLeave.TabIndex = 6;
-            this.btnLeave.Text = "   Leave Management";
-            this.btnLeave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLeave.UseVisualStyleBackColor = true;
-            this.btnLeave.Click += new System.EventHandler(this.button6_Click);
+            this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopPanel.Location = new System.Drawing.Point(220, 80);
+            this.panelDesktopPanel.Name = "panelDesktopPanel";
+            this.panelDesktopPanel.Size = new System.Drawing.Size(793, 481);
+            this.panelDesktopPanel.TabIndex = 2;
             // 
             // Lovely
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 490);
+            this.ClientSize = new System.Drawing.Size(1013, 561);
+            this.Controls.Add(this.panelDesktopPanel);
+            this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panel1);
+            this.MinimumSize = new System.Drawing.Size(990, 600);
             this.Name = "Lovely";
             this.Text = "Lovely";
+            this.Load += new System.EventHandler(this.Lovely_Load);
             this.panel1.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
+            this.panelTitleBar.ResumeLayout(false);
+            this.panelTitleBar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -193,5 +264,10 @@
         private Button btnPprocessing;
         private Button btnAttendance;
         private Button btnReporting;
+        private Label label1;
+        private Panel panelTitleBar;
+        private Label lblTitle;
+        private Panel panelDesktopPanel;
+        private Button btnCloseChildForm;
     }
 }
