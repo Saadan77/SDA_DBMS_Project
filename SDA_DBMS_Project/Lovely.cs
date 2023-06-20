@@ -20,6 +20,7 @@ namespace SDA_DBMS_Project
         {
 
             InitializeComponent();
+            random = new Random();
         }
         private Color SelectThemeColor()
         {
@@ -67,32 +68,38 @@ namespace SDA_DBMS_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //btnEmployee 
+            ActivateButton(sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            //btnReporting
+            ActivateButton(sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            //btnAttendance
+            ActivateButton(sender);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            //btnPprocessing
+            ActivateButton(sender);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            //btnPcalculation
+            ActivateButton(sender);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            //btnLeave
+            ActivateButton(sender);
         }
     }
 }
