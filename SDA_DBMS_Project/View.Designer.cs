@@ -38,8 +38,15 @@
             btnManagement = new Button();
             panelLogo = new Panel();
             Views = new Label();
+            avg_atdBtn = new Button();
+            payrollBtn = new Button();
+            button1 = new Button();
+            dataGridView1 = new DataGridView();
+            panel2 = new Panel();
             panel1.SuspendLayout();
             panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -186,17 +193,71 @@
             Views.TabIndex = 0;
             Views.Text = "VIEWS";
             // 
+            // avg_atdBtn
+            // 
+            avg_atdBtn.Location = new Point(408, 113);
+            avg_atdBtn.Name = "avg_atdBtn";
+            avg_atdBtn.Size = new Size(206, 34);
+            avg_atdBtn.TabIndex = 2;
+            avg_atdBtn.Text = "Average Attendance";
+            avg_atdBtn.UseVisualStyleBackColor = true;
+            avg_atdBtn.Click += avg_atdBtn_Click;
+            // 
+            // payrollBtn
+            // 
+            payrollBtn.Location = new Point(779, 113);
+            payrollBtn.Name = "payrollBtn";
+            payrollBtn.Size = new Size(112, 34);
+            payrollBtn.TabIndex = 3;
+            payrollBtn.Text = "Payroll Summary";
+            payrollBtn.UseVisualStyleBackColor = true;
+            payrollBtn.Click += payrollBtn_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(1083, 113);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 5;
+            button1.Text = "Total Hours";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(3, 3);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.RowTemplate.Height = 33;
+            dataGridView1.Size = new Size(597, 246);
+            dataGridView1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(dataGridView1);
+            panel2.Location = new Point(446, 310);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(603, 249);
+            panel2.TabIndex = 6;
+            // 
             // View
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1447, 817);
+            Controls.Add(panel2);
+            Controls.Add(button1);
+            Controls.Add(payrollBtn);
+            Controls.Add(avg_atdBtn);
             Controls.Add(panel1);
             Name = "View";
             Text = "View";
             panel1.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
             panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -211,5 +272,10 @@
         private Button btnManagement;
         private Panel panelLogo;
         private Label Views;
+        private Button avg_atdBtn;
+        private Button payrollBtn;
+        private Button button1;
+        private DataGridView dataGridView1;
+        private Panel panel2;
     }
 }
