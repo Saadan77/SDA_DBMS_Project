@@ -55,7 +55,7 @@ namespace SDA_DBMS_Project
         }
         private void DisableButton()
         {
-            foreach (Control previousBtn in panelLogo.Controls)
+            foreach (Control previousBtn in panel1.Controls)
             {
                 if (previousBtn.GetType() == typeof(Button))
                 {
