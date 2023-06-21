@@ -29,8 +29,8 @@ namespace SDA_DBMS_Project.Forms
                     btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
                 }
             }
-            label4.ForeColor = ThemeColor.SecondaryColor;
-            label5.ForeColor = ThemeColor.PrimaryColor;
+            //label4.ForeColor = ThemeColor.SecondaryColor;
+            //label5.ForeColor = ThemeColor.PrimaryColor;
         }
 
         private void FormPayrollProcessing_Load(object sender, EventArgs e)
