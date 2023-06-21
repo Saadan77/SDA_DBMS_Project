@@ -293,7 +293,7 @@
             // gridEmployeeAttendance
             // 
             this.gridEmployeeAttendance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridEmployeeAttendance.Location = new System.Drawing.Point(110, 94);
+            this.gridEmployeeAttendance.Location = new System.Drawing.Point(98, 95);
             this.gridEmployeeAttendance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gridEmployeeAttendance.Name = "gridEmployeeAttendance";
             this.gridEmployeeAttendance.RowHeadersWidth = 62;
