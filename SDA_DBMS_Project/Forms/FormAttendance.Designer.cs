@@ -64,6 +64,7 @@
             this.btnClockInOutView.Text = "   ClockInOutView";
             this.btnClockInOutView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClockInOutView.UseVisualStyleBackColor = true;
+            this.btnClockInOutView.Click += new System.EventHandler(this.btnClockInOutView_Click);
             // 
             // btnBreakDurationView
             // 
@@ -81,6 +82,7 @@
             this.btnBreakDurationView.Text = "BreakDurationView";
             this.btnBreakDurationView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBreakDurationView.UseVisualStyleBackColor = true;
+            this.btnBreakDurationView.Click += new System.EventHandler(this.btnBreakDurationView_Click);
             // 
             // btnOvertimeHoursView
             // 
@@ -98,6 +100,7 @@
             this.btnOvertimeHoursView.Text = "OvertimeHoursView";
             this.btnOvertimeHoursView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOvertimeHoursView.UseVisualStyleBackColor = true;
+            this.btnOvertimeHoursView.Click += new System.EventHandler(this.btnOvertimeHoursView_Click);
             // 
             // panel2
             // 
