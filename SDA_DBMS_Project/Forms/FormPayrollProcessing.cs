@@ -51,9 +51,9 @@ namespace SDA_DBMS_Project.Forms
 
         private void btnPayrollExpenseView_Click(object sender, EventArgs e)
         {
-            pnlClockInOut.Visible = true;
-            pnlPayrollExpenseView.Visible = false;
+            pnlPayrollExpenseView.Visible = true;
             pnlLeaveUsageView.Visible = false;
+            pnlEmployeeAttendanceView.Visible = false;
 
             try
             {
@@ -64,13 +64,63 @@ namespace SDA_DBMS_Project.Forms
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
 
-                    gridClockView.DataSource = dataTable;
+                    gridPayrollExpenseView.DataSource = dataTable;
                 }
             }
 
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while displaying Clock In Out View: " + ex.Message);
+                MessageBox.Show("An error occurred while displaying Payroll Expense View: " + ex.Message);
+            }
+        }
+
+        private void btnLeaveUsageView_Click(object sender, EventArgs e)
+        {
+            pnlEmployeeAttendanceView.Visible = false;
+            pnlPayrollExpenseView.Visible = false;
+            pnlLeaveUsageView.Visible = true;
+
+            try
+            {
+                using (SqlConnection connection = Connector.GetConnection())
+                {
+                    SqlCommand command = new SqlCommand("SELECT * FROM LeaveUsageView", connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    gridLeaveUsageView.DataSource = dataTable;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while displaying Leave Usage View: " + ex.Message);
+            }
+        }
+
+        private void btnEmployeeAttendanceView_Click(object sender, EventArgs e)
+        {
+            pnlEmployeeAttendanceView.Visible = true;
+            pnlPayrollExpenseView.Visible = false;
+            pnlLeaveUsageView.Visible = false;
+
+            try
+            {
+                using (SqlConnection connection = Connector.GetConnection())
+                {
+                    SqlCommand command = new SqlCommand("SELECT * FROM EmployeeAttendanceView", connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    gridEmployeeAttendanceView.DataSource = dataTable;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while displaying Employee Attendance View: " + ex.Message);
             }
         }
     }
