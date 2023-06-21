@@ -1,3 +1,5 @@
+using SDA_DBMS_Project.Forms;
+
 namespace SDA_DBMS_Project
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace SDA_DBMS_Project
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Lovely());
+            Application.Run(new FormLeaveManagement());
         }
     }
 }
