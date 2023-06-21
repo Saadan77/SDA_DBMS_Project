@@ -99,5 +99,11 @@ namespace SDA_DBMS_Project.Forms
             FormLeaveManagement openForm = new FormLeaveManagement();
             openForm.Show();
         }
+
+        private void btnAttendance_Click(object sender, EventArgs e)
+        {
+            FormAttendance openForm = new FormAttendance();
+            openForm.Show();
+        }
     }
 }

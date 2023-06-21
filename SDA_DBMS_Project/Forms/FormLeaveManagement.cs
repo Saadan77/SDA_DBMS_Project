@@ -121,5 +121,27 @@ namespace SDA_DBMS_Project.Forms
                 MessageBox.Show("An error occurred while displaying Employee Attendance view: " + ex.Message);
             }
         }
+
+        private void btnPcalculation_Click(object sender, EventArgs e)
+        {
+            FormPayrollCalculation openForm = new FormPayrollCalculation();
+            openForm.Show();
+        }
+
+        private void btnAttendance_Click(object sender, EventArgs e)
+        {
+            FormAttendance openForm = new FormAttendance();
+            openForm.Show();
+        }
+
+        private void FormLeaveManagement_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
