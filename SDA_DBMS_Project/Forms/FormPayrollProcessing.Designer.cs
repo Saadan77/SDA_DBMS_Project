@@ -28,174 +28,171 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPayrollProcessing));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pnlOverview = new System.Windows.Forms.Panel();
-            this.gridOvertime = new System.Windows.Forms.DataGridView();
-            this.pnlBreakView = new System.Windows.Forms.Panel();
-            this.gridBreakView = new System.Windows.Forms.DataGridView();
-            this.pnlClockInOut = new System.Windows.Forms.Panel();
-            this.gridClockView = new System.Windows.Forms.DataGridView();
-            this.btnPayrollExpenseView = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel2.SuspendLayout();
-            this.pnlOverview.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridOvertime)).BeginInit();
-            this.pnlBreakView.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridBreakView)).BeginInit();
-            this.pnlClockInOut.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridClockView)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // dataGridView1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.btnPayrollExpenseView);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(219, 687);
-            this.panel2.TabIndex = 30;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(342, 92);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(390, 237);
+            this.dataGridView1.TabIndex = 23;
             // 
-            // pnlOverview
+            // label5
             // 
-            this.pnlOverview.Controls.Add(this.gridOvertime);
-            this.pnlOverview.Location = new System.Drawing.Point(372, 156);
-            this.pnlOverview.Name = "pnlOverview";
-            this.pnlOverview.Size = new System.Drawing.Size(521, 317);
-            this.pnlOverview.TabIndex = 31;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(69, 248);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 25);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "label5";
             // 
-            // gridOvertime
+            // label4
             // 
-            this.gridOvertime.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridOvertime.Location = new System.Drawing.Point(0, 0);
-            this.gridOvertime.Name = "gridOvertime";
-            this.gridOvertime.RowTemplate.Height = 25;
-            this.gridOvertime.Size = new System.Drawing.Size(518, 317);
-            this.gridOvertime.TabIndex = 0;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(420, 55);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 25);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "label4";
             // 
-            // pnlBreakView
+            // textBox3
             // 
-            this.pnlBreakView.Controls.Add(this.gridBreakView);
-            this.pnlBreakView.Location = new System.Drawing.Point(372, 156);
-            this.pnlBreakView.Name = "pnlBreakView";
-            this.pnlBreakView.Size = new System.Drawing.Size(521, 320);
-            this.pnlBreakView.TabIndex = 32;
+            this.textBox3.Location = new System.Drawing.Point(153, 167);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 23);
+            this.textBox3.TabIndex = 20;
             // 
-            // gridBreakView
+            // label3
             // 
-            this.gridBreakView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridBreakView.Location = new System.Drawing.Point(0, 0);
-            this.gridBreakView.Name = "gridBreakView";
-            this.gridBreakView.RowTemplate.Height = 25;
-            this.gridBreakView.Size = new System.Drawing.Size(518, 317);
-            this.gridBreakView.TabIndex = 0;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(69, 167);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "label3";
             // 
-            // pnlClockInOut
+            // textBox2
             // 
-            this.pnlClockInOut.Controls.Add(this.gridClockView);
-            this.pnlClockInOut.Location = new System.Drawing.Point(372, 162);
-            this.pnlClockInOut.Name = "pnlClockInOut";
-            this.pnlClockInOut.Size = new System.Drawing.Size(521, 314);
-            this.pnlClockInOut.TabIndex = 33;
+            this.textBox2.Location = new System.Drawing.Point(153, 126);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.TabIndex = 18;
             // 
-            // gridClockView
+            // label2
             // 
-            this.gridClockView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridClockView.Location = new System.Drawing.Point(3, 3);
-            this.gridClockView.Name = "gridClockView";
-            this.gridClockView.RowTemplate.Height = 25;
-            this.gridClockView.Size = new System.Drawing.Size(518, 308);
-            this.gridClockView.TabIndex = 0;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(69, 126);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "label2";
             // 
-            // btnPayrollExpenseView
+            // textBox1
             // 
-            this.btnPayrollExpenseView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPayrollExpenseView.FlatAppearance.BorderSize = 0;
-            this.btnPayrollExpenseView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPayrollExpenseView.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPayrollExpenseView.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPayrollExpenseView.Image = ((System.Drawing.Image)(resources.GetObject("btnPayrollExpenseView.Image")));
-            this.btnPayrollExpenseView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPayrollExpenseView.Location = new System.Drawing.Point(0, 177);
-            this.btnPayrollExpenseView.Name = "btnPayrollExpenseView";
-            this.btnPayrollExpenseView.Size = new System.Drawing.Size(216, 71);
-            this.btnPayrollExpenseView.TabIndex = 25;
-            this.btnPayrollExpenseView.Text = "   PayrollExpenseView";
-            this.btnPayrollExpenseView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPayrollExpenseView.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(153, 82);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 16;
             // 
-            // button1
+            // label1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 318);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 71);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "   ClockInOutView";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(69, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "label1";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(342, 352);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(104, 44);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 443);
+            this.button2.Location = new System.Drawing.Point(480, 352);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(216, 71);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "   ClockInOutView";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.Size = new System.Drawing.Size(103, 44);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(615, 352);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 44);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FormPayrollProcessing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 687);
-            this.Controls.Add(this.pnlOverview);
-            this.Controls.Add(this.pnlBreakView);
-            this.Controls.Add(this.pnlClockInOut);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Name = "FormPayrollProcessing";
             this.Text = "FormPayrollProcessing";
-            this.Load += new System.EventHandler(this.FormPayrollProcessing_Load);
-            this.panel2.ResumeLayout(false);
-            this.pnlOverview.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridOvertime)).EndInit();
-            this.pnlBreakView.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridBreakView)).EndInit();
-            this.pnlClockInOut.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridClockView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Panel panel2;
-        private Panel pnlOverview;
-        private DataGridView gridOvertime;
-        private Panel pnlBreakView;
-        private DataGridView gridBreakView;
-        private Panel pnlClockInOut;
-        private DataGridView gridClockView;
+        private DataGridView dataGridView1;
+        private Label label5;
+        private Label label4;
+        private TextBox textBox3;
+        private Label label3;
+        private TextBox textBox2;
+        private Label label2;
+        private TextBox textBox1;
+        private Label label1;
+        private Button button3;
         private Button button2;
         private Button button1;
-        private Button btnPayrollExpenseView;
     }
 }

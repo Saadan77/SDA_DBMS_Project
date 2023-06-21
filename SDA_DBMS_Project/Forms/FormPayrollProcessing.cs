@@ -32,10 +32,5 @@ namespace SDA_DBMS_Project.Forms
             label4.ForeColor = ThemeColor.SecondaryColor;
             label5.ForeColor = ThemeColor.PrimaryColor;
         }
-
-        private void FormPayrollProcessing_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
