@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lovely));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnLeave = new System.Windows.Forms.Button();
             this.btnPcalculation = new System.Windows.Forms.Button();
             this.btnPprocessing = new System.Windows.Forms.Button();
@@ -57,6 +58,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnLeave);
             this.panel1.Controls.Add(this.btnPcalculation);
             this.panel1.Controls.Add(this.btnPprocessing);
@@ -69,6 +71,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 561);
             this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 440);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 60);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "   Employees";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // btnLeave
             // 
@@ -355,5 +373,6 @@
         private Button btnClose;
         private Label label2;
         private PictureBox pictureBox1;
+        private Button button1;
     }
 }
