@@ -43,7 +43,8 @@ namespace SDA_DBMS_Project.Forms
                     btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
                 }
             }
-            
+            label4.ForeColor = ThemeColor.SecondaryColor;
+            label5.ForeColor = ThemeColor.PrimaryColor;
         }
     }
 }
