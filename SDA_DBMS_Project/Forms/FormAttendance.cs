@@ -30,7 +30,12 @@ namespace SDA_DBMS_Project.Forms
                 }
             }
             label4.ForeColor = ThemeColor.SecondaryColor;
-            label5.ForeColor = ThemeColor.PrimaryColor;
+            
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
