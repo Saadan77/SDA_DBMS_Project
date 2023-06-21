@@ -37,5 +37,10 @@ namespace SDA_DBMS_Project.Forms
         {
 
         }
+
+        private void FormAttendance_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
