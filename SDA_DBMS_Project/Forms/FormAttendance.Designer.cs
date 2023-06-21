@@ -114,7 +114,7 @@
             // pnlClockInOut
             // 
             this.pnlClockInOut.Controls.Add(this.gridClockView);
-            this.pnlClockInOut.Location = new System.Drawing.Point(354, 140);
+            this.pnlClockInOut.Location = new System.Drawing.Point(367, 140);
             this.pnlClockInOut.Name = "pnlClockInOut";
             this.pnlClockInOut.Size = new System.Drawing.Size(521, 314);
             this.pnlClockInOut.TabIndex = 30;
@@ -131,7 +131,7 @@
             // pnlBreakView
             // 
             this.pnlBreakView.Controls.Add(this.gridBreakView);
-            this.pnlBreakView.Location = new System.Drawing.Point(354, 134);
+            this.pnlBreakView.Location = new System.Drawing.Point(367, 134);
             this.pnlBreakView.Name = "pnlBreakView";
             this.pnlBreakView.Size = new System.Drawing.Size(521, 320);
             this.pnlBreakView.TabIndex = 1;
@@ -148,7 +148,7 @@
             // pnlOverview
             // 
             this.pnlOverview.Controls.Add(this.gridOvertime);
-            this.pnlOverview.Location = new System.Drawing.Point(354, 134);
+            this.pnlOverview.Location = new System.Drawing.Point(367, 134);
             this.pnlOverview.Name = "pnlOverview";
             this.pnlOverview.Size = new System.Drawing.Size(521, 317);
             this.pnlOverview.TabIndex = 1;
