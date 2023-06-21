@@ -37,15 +37,15 @@
             this.gridPayrollExpenseView = new System.Windows.Forms.DataGridView();
             this.pnlLeaveUsageView = new System.Windows.Forms.Panel();
             this.gridLeaveUsageView = new System.Windows.Forms.DataGridView();
-            this.pnlEmployeeAttendanceView = new System.Windows.Forms.Panel();
-            this.gridEmployeeAttendanceView = new System.Windows.Forms.DataGridView();
+            this.pnlClockInOut = new System.Windows.Forms.Panel();
+            this.gridClockView = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.pnlPayrollExpenseView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridPayrollExpenseView)).BeginInit();
             this.pnlLeaveUsageView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridLeaveUsageView)).BeginInit();
-            this.pnlEmployeeAttendanceView.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridEmployeeAttendanceView)).BeginInit();
+            this.pnlClockInOut.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridClockView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -57,7 +57,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(219, 561);
+            this.panel2.Size = new System.Drawing.Size(219, 687);
             this.panel2.TabIndex = 30;
             // 
             // btnEmployeeAttendanceView
@@ -69,14 +69,13 @@
             this.btnEmployeeAttendanceView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnEmployeeAttendanceView.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeAttendanceView.Image")));
             this.btnEmployeeAttendanceView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployeeAttendanceView.Location = new System.Drawing.Point(0, 329);
+            this.btnEmployeeAttendanceView.Location = new System.Drawing.Point(3, 514);
             this.btnEmployeeAttendanceView.Name = "btnEmployeeAttendanceView";
             this.btnEmployeeAttendanceView.Size = new System.Drawing.Size(216, 71);
             this.btnEmployeeAttendanceView.TabIndex = 27;
             this.btnEmployeeAttendanceView.Text = "   EmployeeAttendance View";
             this.btnEmployeeAttendanceView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEmployeeAttendanceView.UseVisualStyleBackColor = true;
-            this.btnEmployeeAttendanceView.Click += new System.EventHandler(this.btnEmployeeAttendanceView_Click);
             // 
             // btnLeaveUsageView
             // 
@@ -87,14 +86,13 @@
             this.btnLeaveUsageView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnLeaveUsageView.Image = ((System.Drawing.Image)(resources.GetObject("btnLeaveUsageView.Image")));
             this.btnLeaveUsageView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLeaveUsageView.Location = new System.Drawing.Point(3, 218);
+            this.btnLeaveUsageView.Location = new System.Drawing.Point(3, 387);
             this.btnLeaveUsageView.Name = "btnLeaveUsageView";
             this.btnLeaveUsageView.Size = new System.Drawing.Size(216, 71);
             this.btnLeaveUsageView.TabIndex = 26;
             this.btnLeaveUsageView.Text = "   LeaveUsageView";
             this.btnLeaveUsageView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLeaveUsageView.UseVisualStyleBackColor = true;
-            this.btnLeaveUsageView.Click += new System.EventHandler(this.btnLeaveUsageView_Click);
             // 
             // btnPayrollExpenseView
             // 
@@ -105,7 +103,7 @@
             this.btnPayrollExpenseView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPayrollExpenseView.Image = ((System.Drawing.Image)(resources.GetObject("btnPayrollExpenseView.Image")));
             this.btnPayrollExpenseView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPayrollExpenseView.Location = new System.Drawing.Point(0, 103);
+            this.btnPayrollExpenseView.Location = new System.Drawing.Point(0, 253);
             this.btnPayrollExpenseView.Name = "btnPayrollExpenseView";
             this.btnPayrollExpenseView.Size = new System.Drawing.Size(216, 71);
             this.btnPayrollExpenseView.TabIndex = 25;
@@ -117,7 +115,7 @@
             // pnlPayrollExpenseView
             // 
             this.pnlPayrollExpenseView.Controls.Add(this.gridPayrollExpenseView);
-            this.pnlPayrollExpenseView.Location = new System.Drawing.Point(380, 103);
+            this.pnlPayrollExpenseView.Location = new System.Drawing.Point(386, 253);
             this.pnlPayrollExpenseView.Name = "pnlPayrollExpenseView";
             this.pnlPayrollExpenseView.Size = new System.Drawing.Size(521, 317);
             this.pnlPayrollExpenseView.TabIndex = 31;
@@ -134,7 +132,7 @@
             // pnlLeaveUsageView
             // 
             this.pnlLeaveUsageView.Controls.Add(this.gridLeaveUsageView);
-            this.pnlLeaveUsageView.Location = new System.Drawing.Point(380, 103);
+            this.pnlLeaveUsageView.Location = new System.Drawing.Point(386, 253);
             this.pnlLeaveUsageView.Name = "pnlLeaveUsageView";
             this.pnlLeaveUsageView.Size = new System.Drawing.Size(521, 320);
             this.pnlLeaveUsageView.TabIndex = 32;
@@ -148,31 +146,31 @@
             this.gridLeaveUsageView.Size = new System.Drawing.Size(518, 317);
             this.gridLeaveUsageView.TabIndex = 0;
             // 
-            // pnlEmployeeAttendanceView
+            // pnlClockInOut
             // 
-            this.pnlEmployeeAttendanceView.Controls.Add(this.gridEmployeeAttendanceView);
-            this.pnlEmployeeAttendanceView.Location = new System.Drawing.Point(380, 109);
-            this.pnlEmployeeAttendanceView.Name = "pnlEmployeeAttendanceView";
-            this.pnlEmployeeAttendanceView.Size = new System.Drawing.Size(521, 314);
-            this.pnlEmployeeAttendanceView.TabIndex = 33;
+            this.pnlClockInOut.Controls.Add(this.gridClockView);
+            this.pnlClockInOut.Location = new System.Drawing.Point(386, 259);
+            this.pnlClockInOut.Name = "pnlClockInOut";
+            this.pnlClockInOut.Size = new System.Drawing.Size(521, 314);
+            this.pnlClockInOut.TabIndex = 33;
             // 
-            // gridEmployeeAttendanceView
+            // gridClockView
             // 
-            this.gridEmployeeAttendanceView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridEmployeeAttendanceView.Location = new System.Drawing.Point(3, 3);
-            this.gridEmployeeAttendanceView.Name = "gridEmployeeAttendanceView";
-            this.gridEmployeeAttendanceView.RowTemplate.Height = 25;
-            this.gridEmployeeAttendanceView.Size = new System.Drawing.Size(518, 308);
-            this.gridEmployeeAttendanceView.TabIndex = 0;
+            this.gridClockView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridClockView.Location = new System.Drawing.Point(3, 3);
+            this.gridClockView.Name = "gridClockView";
+            this.gridClockView.RowTemplate.Height = 25;
+            this.gridClockView.Size = new System.Drawing.Size(518, 308);
+            this.gridClockView.TabIndex = 0;
             // 
             // FormPayrollProcessing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 561);
+            this.ClientSize = new System.Drawing.Size(1013, 687);
             this.Controls.Add(this.pnlPayrollExpenseView);
             this.Controls.Add(this.pnlLeaveUsageView);
-            this.Controls.Add(this.pnlEmployeeAttendanceView);
+            this.Controls.Add(this.pnlClockInOut);
             this.Controls.Add(this.panel2);
             this.Name = "FormPayrollProcessing";
             this.Text = "FormPayrollProcessing";
@@ -182,8 +180,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridPayrollExpenseView)).EndInit();
             this.pnlLeaveUsageView.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridLeaveUsageView)).EndInit();
-            this.pnlEmployeeAttendanceView.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridEmployeeAttendanceView)).EndInit();
+            this.pnlClockInOut.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridClockView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,8 +193,8 @@
         private DataGridView gridPayrollExpenseView;
         private Panel pnlLeaveUsageView;
         private DataGridView gridLeaveUsageView;
-        private Panel pnlEmployeeAttendanceView;
-        private DataGridView gridEmployeeAttendanceView;
+        private Panel pnlClockInOut;
+        private DataGridView gridClockView;
         private Button btnEmployeeAttendanceView;
         private Button btnLeaveUsageView;
         private Button btnPayrollExpenseView;
