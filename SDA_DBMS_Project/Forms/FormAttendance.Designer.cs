@@ -57,14 +57,13 @@
             this.btnClockInOutView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnClockInOutView.Image = ((System.Drawing.Image)(resources.GetObject("btnClockInOutView.Image")));
             this.btnClockInOutView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClockInOutView.Location = new System.Drawing.Point(3, 260);
+            this.btnClockInOutView.Location = new System.Drawing.Point(3, 134);
             this.btnClockInOutView.Name = "btnClockInOutView";
             this.btnClockInOutView.Size = new System.Drawing.Size(216, 71);
             this.btnClockInOutView.TabIndex = 24;
             this.btnClockInOutView.Text = "   ClockInOutView";
             this.btnClockInOutView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClockInOutView.UseVisualStyleBackColor = true;
-            this.btnClockInOutView.Click += new System.EventHandler(this.btnClockInOutView_Click);
             // 
             // btnBreakDurationView
             // 
@@ -75,14 +74,13 @@
             this.btnBreakDurationView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnBreakDurationView.Image = ((System.Drawing.Image)(resources.GetObject("btnBreakDurationView.Image")));
             this.btnBreakDurationView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBreakDurationView.Location = new System.Drawing.Point(3, 375);
+            this.btnBreakDurationView.Location = new System.Drawing.Point(3, 249);
             this.btnBreakDurationView.Name = "btnBreakDurationView";
             this.btnBreakDurationView.Size = new System.Drawing.Size(216, 71);
             this.btnBreakDurationView.TabIndex = 25;
             this.btnBreakDurationView.Text = "BreakDurationView";
             this.btnBreakDurationView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBreakDurationView.UseVisualStyleBackColor = true;
-            this.btnBreakDurationView.Click += new System.EventHandler(this.btnBreakDurationView_Click);
             // 
             // btnOvertimeHoursView
             // 
@@ -93,14 +91,13 @@
             this.btnOvertimeHoursView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnOvertimeHoursView.Image = ((System.Drawing.Image)(resources.GetObject("btnOvertimeHoursView.Image")));
             this.btnOvertimeHoursView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOvertimeHoursView.Location = new System.Drawing.Point(3, 500);
+            this.btnOvertimeHoursView.Location = new System.Drawing.Point(3, 374);
             this.btnOvertimeHoursView.Name = "btnOvertimeHoursView";
             this.btnOvertimeHoursView.Size = new System.Drawing.Size(216, 71);
             this.btnOvertimeHoursView.TabIndex = 26;
             this.btnOvertimeHoursView.Text = "OvertimeHoursView";
             this.btnOvertimeHoursView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOvertimeHoursView.UseVisualStyleBackColor = true;
-            this.btnOvertimeHoursView.Click += new System.EventHandler(this.btnOvertimeHoursView_Click);
             // 
             // panel2
             // 
@@ -111,7 +108,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(219, 687);
+            this.panel2.Size = new System.Drawing.Size(219, 561);
             this.panel2.TabIndex = 29;
             // 
             // pnlClockInOut
@@ -169,12 +166,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 687);
+            this.ClientSize = new System.Drawing.Size(1020, 561);
             this.Controls.Add(this.pnlOverview);
             this.Controls.Add(this.pnlBreakView);
             this.Controls.Add(this.pnlClockInOut);
             this.Controls.Add(this.panel2);
-            this.MinimumSize = new System.Drawing.Size(990, 400);
+            this.MinimumSize = new System.Drawing.Size(990, 600);
             this.Name = "FormAttendance";
             this.Text = "FormAttendance";
             this.Load += new System.EventHandler(this.FormAttendance_Load);
