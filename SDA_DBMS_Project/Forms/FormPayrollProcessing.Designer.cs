@@ -120,7 +120,7 @@
             this.btnPayrollExpenseView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPayrollExpenseView.Image = ((System.Drawing.Image)(resources.GetObject("btnPayrollExpenseView.Image")));
             this.btnPayrollExpenseView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPayrollExpenseView.Location = new System.Drawing.Point(0, 156);
+            this.btnPayrollExpenseView.Location = new System.Drawing.Point(0, 177);
             this.btnPayrollExpenseView.Name = "btnPayrollExpenseView";
             this.btnPayrollExpenseView.Size = new System.Drawing.Size(216, 71);
             this.btnPayrollExpenseView.TabIndex = 25;
@@ -137,7 +137,7 @@
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 287);
+            this.button1.Location = new System.Drawing.Point(0, 318);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 71);
             this.button1.TabIndex = 26;
@@ -154,7 +154,7 @@
             this.button2.ForeColor = System.Drawing.Color.Gainsboro;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 404);
+            this.button2.Location = new System.Drawing.Point(3, 443);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 71);
             this.button2.TabIndex = 27;
