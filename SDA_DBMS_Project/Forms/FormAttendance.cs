@@ -40,7 +40,7 @@ namespace SDA_DBMS_Project.Forms
                     btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
                 }
             }
-            lblTitle.ForeColor = ThemeColor.SecondaryColor;
+            //lblTitle.ForeColor = ThemeColor.SecondaryColor;
             
         }
 
