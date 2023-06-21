@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,23 @@ namespace SDA_DBMS_Project.Forms
 {
     public partial class FormEmployeeManagement : Form
     {
+        public class Connector
+        {
+            public static SqlConnection GetConnection()
+            {
+                string connectionString = "Data Source=DESKTOP-77CH36A\\SQLEXPRESS;Initial Catalog=Employees;Integrated Security=True";
+                SqlConnection connection = new SqlConnection(connectionString);
+                connection.Open();
+                return connection;
+            }
+        }
+
         public FormEmployeeManagement()
         {
             InitializeComponent();
             LoadTheme();
+
+
         }
         private void LoadTheme()
         {
