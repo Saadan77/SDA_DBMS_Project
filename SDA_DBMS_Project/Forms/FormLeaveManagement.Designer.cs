@@ -36,12 +36,6 @@
             this.pnlEmployeeAttendance = new System.Windows.Forms.Panel();
             this.gridEmployeeAttendance = new System.Windows.Forms.DataGridView();
             this.pnlLeaveManagement = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.btnCloseChildForm = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnMaximize = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
             this.btnPayrollExpenseView = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAttendanceView = new System.Windows.Forms.Button();
@@ -56,7 +50,6 @@
             this.pnlEmployeeAttendance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridEmployeeAttendance)).BeginInit();
             this.pnlLeaveManagement.SuspendLayout();
-            this.panelTitleBar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +63,7 @@
             this.gridLeaveUsage.RowTemplate.Height = 33;
             this.gridLeaveUsage.Size = new System.Drawing.Size(518, 212);
             this.gridLeaveUsage.TabIndex = 0;
+            this.gridLeaveUsage.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridLeaveUsage_CellContentClick);
             // 
             // pnlLeaveUsage
             // 
@@ -130,85 +124,6 @@
             this.pnlLeaveManagement.Size = new System.Drawing.Size(725, 370);
             this.pnlLeaveManagement.TabIndex = 23;
             // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(379, 22);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(281, 30);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "REPORTING & ANALYTICS";
-            // 
-            // btnCloseChildForm
-            // 
-            this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
-            this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseChildForm.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseChildForm.Image")));
-            this.btnCloseChildForm.Location = new System.Drawing.Point(0, 0);
-            this.btnCloseChildForm.Name = "btnCloseChildForm";
-            this.btnCloseChildForm.Size = new System.Drawing.Size(75, 80);
-            this.btnCloseChildForm.TabIndex = 1;
-            this.btnCloseChildForm.UseVisualStyleBackColor = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(2451, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(30, 30);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "O";
-            this.btnClose.UseVisualStyleBackColor = true;
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.FlatAppearance.BorderSize = 0;
-            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMaximize.ForeColor = System.Drawing.Color.White;
-            this.btnMaximize.Location = new System.Drawing.Point(2426, 0);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(30, 30);
-            this.btnMaximize.TabIndex = 3;
-            this.btnMaximize.Text = "O";
-            this.btnMaximize.UseVisualStyleBackColor = true;
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMinimize.ForeColor = System.Drawing.Color.White;
-            this.btnMinimize.Location = new System.Drawing.Point(2403, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
-            this.btnMinimize.TabIndex = 4;
-            this.btnMinimize.Text = "O";
-            this.btnMinimize.UseVisualStyleBackColor = true;
-            // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panelTitleBar.Controls.Add(this.btnMinimize);
-            this.panelTitleBar.Controls.Add(this.btnMaximize);
-            this.panelTitleBar.Controls.Add(this.btnClose);
-            this.panelTitleBar.Controls.Add(this.btnCloseChildForm);
-            this.panelTitleBar.Controls.Add(this.lblTitle);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(959, 80);
-            this.panelTitleBar.TabIndex = 22;
-            // 
             // btnPayrollExpenseView
             // 
             this.btnPayrollExpenseView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -218,7 +133,7 @@
             this.btnPayrollExpenseView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPayrollExpenseView.Image = ((System.Drawing.Image)(resources.GetObject("btnPayrollExpenseView.Image")));
             this.btnPayrollExpenseView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPayrollExpenseView.Location = new System.Drawing.Point(0, 22);
+            this.btnPayrollExpenseView.Location = new System.Drawing.Point(0, 119);
             this.btnPayrollExpenseView.Name = "btnPayrollExpenseView";
             this.btnPayrollExpenseView.Size = new System.Drawing.Size(213, 71);
             this.btnPayrollExpenseView.TabIndex = 26;
@@ -237,9 +152,9 @@
             this.panel2.Controls.Add(this.btnLeaveUsageView);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 80);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(219, 369);
+            this.panel2.Size = new System.Drawing.Size(219, 449);
             this.panel2.TabIndex = 31;
             // 
             // btnAttendanceView
@@ -251,7 +166,7 @@
             this.btnAttendanceView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAttendanceView.Image = ((System.Drawing.Image)(resources.GetObject("btnAttendanceView.Image")));
             this.btnAttendanceView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAttendanceView.Location = new System.Drawing.Point(0, 256);
+            this.btnAttendanceView.Location = new System.Drawing.Point(0, 336);
             this.btnAttendanceView.Name = "btnAttendanceView";
             this.btnAttendanceView.Size = new System.Drawing.Size(213, 71);
             this.btnAttendanceView.TabIndex = 29;
@@ -269,7 +184,7 @@
             this.btnLeaveView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnLeaveView.Image = ((System.Drawing.Image)(resources.GetObject("btnLeaveView.Image")));
             this.btnLeaveView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLeaveView.Location = new System.Drawing.Point(3, 149);
+            this.btnLeaveView.Location = new System.Drawing.Point(3, 229);
             this.btnLeaveView.Name = "btnLeaveView";
             this.btnLeaveView.Size = new System.Drawing.Size(213, 71);
             this.btnLeaveView.TabIndex = 28;
@@ -287,7 +202,7 @@
             this.btnEmployeeAttendanceView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnEmployeeAttendanceView.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployeeAttendanceView.Image")));
             this.btnEmployeeAttendanceView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployeeAttendanceView.Location = new System.Drawing.Point(19, 598);
+            this.btnEmployeeAttendanceView.Location = new System.Drawing.Point(19, 678);
             this.btnEmployeeAttendanceView.Name = "btnEmployeeAttendanceView";
             this.btnEmployeeAttendanceView.Size = new System.Drawing.Size(216, 71);
             this.btnEmployeeAttendanceView.TabIndex = 27;
@@ -304,7 +219,7 @@
             this.btnLeaveUsageView.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnLeaveUsageView.Image = ((System.Drawing.Image)(resources.GetObject("btnLeaveUsageView.Image")));
             this.btnLeaveUsageView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLeaveUsageView.Location = new System.Drawing.Point(22, 487);
+            this.btnLeaveUsageView.Location = new System.Drawing.Point(22, 567);
             this.btnLeaveUsageView.Name = "btnLeaveUsageView";
             this.btnLeaveUsageView.Size = new System.Drawing.Size(216, 71);
             this.btnLeaveUsageView.TabIndex = 26;
@@ -321,7 +236,7 @@
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(19, 372);
+            this.button1.Location = new System.Drawing.Point(19, 452);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 71);
             this.button1.TabIndex = 25;
@@ -335,7 +250,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 449);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.pnlLeaveManagement);
             this.Name = "FormLeaveManagement";
             this.Text = "FormReporting&Analytics";
@@ -346,8 +260,6 @@
             this.pnlEmployeeAttendance.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridEmployeeAttendance)).EndInit();
             this.pnlLeaveManagement.ResumeLayout(false);
-            this.panelTitleBar.ResumeLayout(false);
-            this.panelTitleBar.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -362,12 +274,6 @@
         private Panel pnlEmployeeAttendance;
         private DataGridView gridEmployeeAttendance;
         private Button btnPayrollExpenseView;
-        private Label lblTitle;
-        private Button btnCloseChildForm;
-        private Button btnClose;
-        private Button btnMaximize;
-        private Button btnMinimize;
-        private Panel panelTitleBar;
         private Panel panel2;
         private Button btnEmployeeAttendanceView;
         private Button btnLeaveUsageView;

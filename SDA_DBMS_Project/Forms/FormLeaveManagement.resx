@@ -58,14 +58,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnCloseChildForm.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAHNJREFUOE/tkjsKgDAQBWO8tmCtoLZ22nnMOC/uBfIRETIwzS471brPCSF4nHGw
-        UT4WO1AsNs6DgGJnTD1Rb6t0dIwtloCOsU5MENCfifKYIDLFXMVgh7uKcGFvq3yItOhPonp4vZJYbVwG
-        IUU3HG30Js7daFMa+KtPZCsAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="btnPayrollExpenseView.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
