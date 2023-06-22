@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace SDA_DBMS_Project.Forms
 {
@@ -17,7 +9,7 @@ namespace SDA_DBMS_Project.Forms
         {
             public static SqlConnection GetConnection()
             {
-                string connectionString = "Data Source=SAADAN2001\\SAADANSQL;Initial Catalog=Employees;Persist Security Info=True;User ID=Saadan;Password=Saadanbinjawad$500";
+                string connectionString = "Data Source=DESKTOP-77CH36A\\SQLEXPRESS;Initial Catalog=Employees;Integrated Security=True";
                 SqlConnection connection = new SqlConnection(connectionString);
                 connection.Open();
                 return connection;
@@ -47,7 +39,7 @@ namespace SDA_DBMS_Project.Forms
             }
         }
 
-        private void btnPayrollExpense_Click(object sender, EventArgs e)
+        private void btnPayrollExpenseView_Click(object sender, EventArgs e)
         {
             pnlEmployeeAttendance.Visible = false;
             pnlLeaveUsage.Visible = false;
@@ -72,7 +64,7 @@ namespace SDA_DBMS_Project.Forms
             }
         }
 
-        private void btnLeaveUsage_Click(object sender, EventArgs e)
+        private void btnLeaveView_Click(object sender, EventArgs e)
         {
             pnlEmployeeAttendance.Visible = false;
             pnlLeaveUsage.Visible = true;
@@ -97,7 +89,7 @@ namespace SDA_DBMS_Project.Forms
             }
         }
 
-        private void btnEmployeeAttendance_Click(object sender, EventArgs e)
+        private void btnAttendanceView_Click(object sender, EventArgs e)
         {
             pnlEmployeeAttendance.Visible = true;
             pnlLeaveUsage.Visible = false;
@@ -120,28 +112,6 @@ namespace SDA_DBMS_Project.Forms
             {
                 MessageBox.Show("An error occurred while displaying Employee Attendance view: " + ex.Message);
             }
-        }
-
-        private void btnPcalculation_Click(object sender, EventArgs e)
-        {
-            FormPayrollCalculation openForm = new FormPayrollCalculation();
-            openForm.Show();
-        }
-
-        private void btnAttendance_Click(object sender, EventArgs e)
-        {
-            FormAttendance openForm = new FormAttendance();
-            openForm.Show();
-        }
-
-        private void FormLeaveManagement_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

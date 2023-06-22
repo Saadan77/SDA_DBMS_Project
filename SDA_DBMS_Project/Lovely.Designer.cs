@@ -101,7 +101,7 @@
             this.btnLeave.Name = "btnLeave";
             this.btnLeave.Size = new System.Drawing.Size(220, 60);
             this.btnLeave.TabIndex = 6;
-            this.btnLeave.Text = "   Leave Management";
+            this.btnLeave.Text = " Reporting and Analytics";
             this.btnLeave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLeave.UseVisualStyleBackColor = true;
             this.btnLeave.Click += new System.EventHandler(this.button6_Click);
@@ -169,9 +169,10 @@
             this.btnReporting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReporting.Location = new System.Drawing.Point(0, 140);
             this.btnReporting.Name = "btnReporting";
+            this.btnReporting.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnReporting.Size = new System.Drawing.Size(220, 60);
             this.btnReporting.TabIndex = 2;
-            this.btnReporting.Text = "   Reporting and Analytics";
+            this.btnReporting.Text = " Leave Management";
             this.btnReporting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReporting.UseVisualStyleBackColor = true;
             this.btnReporting.Click += new System.EventHandler(this.button2_Click);
