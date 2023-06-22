@@ -41,18 +41,27 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAttendanceLeave = new System.Windows.Forms.Button();
             this.attendanceLeaveMagPnl = new System.Windows.Forms.Panel();
             this.AttedanceLeaveGridview = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.pnlAttendanceLeave = new System.Windows.Forms.Panel();
+            this.gridAttendanceLeave = new System.Windows.Forms.DataGridView();
+            this.lblAttendanceLeave = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
             this.panelDesktopPanel.SuspendLayout();
             this.tabelPnl.SuspendLayout();
             this.attendanceLeaveMagPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AttedanceLeaveGridview)).BeginInit();
+            this.pnlAttendanceLeave.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridAttendanceLeave)).BeginInit();
             this.SuspendLayout();
             // 
             // panelDesktopPanel
             // 
+            this.panelDesktopPanel.Controls.Add(this.pnlAttendanceLeave);
             this.panelDesktopPanel.Controls.Add(this.tabelPnl);
             this.panelDesktopPanel.Controls.Add(this.attendanceLeaveMagPnl);
             this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -73,7 +82,7 @@
             this.tabelPnl.Controls.Add(this.button5);
             this.tabelPnl.Controls.Add(this.button3);
             this.tabelPnl.Controls.Add(this.button2);
-            this.tabelPnl.Controls.Add(this.button4);
+            this.tabelPnl.Controls.Add(this.btnAttendanceLeave);
             this.tabelPnl.Location = new System.Drawing.Point(0, 0);
             this.tabelPnl.Name = "tabelPnl";
             this.tabelPnl.Size = new System.Drawing.Size(1010, 558);
@@ -85,7 +94,7 @@
             this.button12.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
             this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(510, 424);
+            this.button12.Location = new System.Drawing.Point(528, 445);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(195, 71);
             this.button12.TabIndex = 35;
@@ -99,7 +108,7 @@
             this.button11.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
             this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(265, 424);
+            this.button11.Location = new System.Drawing.Point(283, 445);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(195, 71);
             this.button11.TabIndex = 34;
@@ -113,7 +122,7 @@
             this.button10.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(611, 312);
+            this.button10.Location = new System.Drawing.Point(629, 333);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(195, 71);
             this.button10.TabIndex = 33;
@@ -127,7 +136,7 @@
             this.button9.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(388, 312);
+            this.button9.Location = new System.Drawing.Point(406, 333);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(195, 71);
             this.button9.TabIndex = 32;
@@ -141,7 +150,7 @@
             this.button8.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(167, 312);
+            this.button8.Location = new System.Drawing.Point(185, 333);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(195, 71);
             this.button8.TabIndex = 31;
@@ -155,7 +164,7 @@
             this.button7.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(611, 192);
+            this.button7.Location = new System.Drawing.Point(629, 213);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(195, 71);
             this.button7.TabIndex = 30;
@@ -169,7 +178,7 @@
             this.button6.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(388, 192);
+            this.button6.Location = new System.Drawing.Point(406, 213);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(195, 71);
             this.button6.TabIndex = 29;
@@ -183,7 +192,7 @@
             this.button5.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(167, 192);
+            this.button5.Location = new System.Drawing.Point(185, 213);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(195, 71);
             this.button5.TabIndex = 28;
@@ -198,7 +207,7 @@
             this.button3.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(611, 72);
+            this.button3.Location = new System.Drawing.Point(629, 93);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(195, 71);
             this.button3.TabIndex = 27;
@@ -212,7 +221,7 @@
             this.button2.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(388, 72);
+            this.button2.Location = new System.Drawing.Point(406, 93);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 71);
             this.button2.TabIndex = 26;
@@ -220,20 +229,20 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnAttendanceLeave
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(167, 72);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(195, 71);
-            this.button4.TabIndex = 25;
-            this.button4.Text = "Attendance and Leave Management";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnAttendanceLeave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAttendanceLeave.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAttendanceLeave.Image = ((System.Drawing.Image)(resources.GetObject("btnAttendanceLeave.Image")));
+            this.btnAttendanceLeave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAttendanceLeave.Location = new System.Drawing.Point(185, 93);
+            this.btnAttendanceLeave.Name = "btnAttendanceLeave";
+            this.btnAttendanceLeave.Size = new System.Drawing.Size(195, 71);
+            this.btnAttendanceLeave.TabIndex = 25;
+            this.btnAttendanceLeave.Text = "Attendance and Leave Management";
+            this.btnAttendanceLeave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAttendanceLeave.UseVisualStyleBackColor = true;
+            this.btnAttendanceLeave.Click += new System.EventHandler(this.button4_Click);
             // 
             // attendanceLeaveMagPnl
             // 
@@ -263,6 +272,81 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Attendance and Leave Management";
             // 
+            // pnlAttendanceLeave
+            // 
+            this.pnlAttendanceLeave.Controls.Add(this.btndelete);
+            this.pnlAttendanceLeave.Controls.Add(this.button13);
+            this.pnlAttendanceLeave.Controls.Add(this.button1);
+            this.pnlAttendanceLeave.Controls.Add(this.lblAttendanceLeave);
+            this.pnlAttendanceLeave.Controls.Add(this.gridAttendanceLeave);
+            this.pnlAttendanceLeave.Location = new System.Drawing.Point(146, 72);
+            this.pnlAttendanceLeave.Name = "pnlAttendanceLeave";
+            this.pnlAttendanceLeave.Size = new System.Drawing.Size(747, 464);
+            this.pnlAttendanceLeave.TabIndex = 36;
+            this.pnlAttendanceLeave.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAttendanceLeave_Paint);
+            // 
+            // gridAttendanceLeave
+            // 
+            this.gridAttendanceLeave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridAttendanceLeave.Location = new System.Drawing.Point(17, 51);
+            this.gridAttendanceLeave.Name = "gridAttendanceLeave";
+            this.gridAttendanceLeave.RowTemplate.Height = 25;
+            this.gridAttendanceLeave.Size = new System.Drawing.Size(716, 274);
+            this.gridAttendanceLeave.TabIndex = 0;
+            this.gridAttendanceLeave.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // lblAttendanceLeave
+            // 
+            this.lblAttendanceLeave.AutoSize = true;
+            this.lblAttendanceLeave.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAttendanceLeave.Location = new System.Drawing.Point(193, 9);
+            this.lblAttendanceLeave.Name = "lblAttendanceLeave";
+            this.lblAttendanceLeave.Size = new System.Drawing.Size(350, 30);
+            this.lblAttendanceLeave.TabIndex = 1;
+            this.lblAttendanceLeave.Text = "Attendance and Leave Management";
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(64, 350);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(195, 71);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "   INSERT";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
+            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.Location = new System.Drawing.Point(293, 350);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(195, 71);
+            this.button13.TabIndex = 37;
+            this.button13.Text = "   UPDATE";
+            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // btndelete
+            // 
+            this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndelete.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btndelete.Image = ((System.Drawing.Image)(resources.GetObject("btndelete.Image")));
+            this.btndelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndelete.Location = new System.Drawing.Point(523, 350);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(195, 71);
+            this.btndelete.TabIndex = 38;
+            this.btndelete.Text = "     DELETE";
+            this.btndelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btndelete.UseVisualStyleBackColor = true;
+            // 
             // Tables
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -276,6 +360,9 @@
             this.attendanceLeaveMagPnl.ResumeLayout(false);
             this.attendanceLeaveMagPnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AttedanceLeaveGridview)).EndInit();
+            this.pnlAttendanceLeave.ResumeLayout(false);
+            this.pnlAttendanceLeave.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridAttendanceLeave)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -283,7 +370,7 @@
         #endregion
         private Panel panelDesktopPanel;
         private Button button2;
-        private Button button4;
+        private Button btnAttendanceLeave;
         private Button button12;
         private Button button11;
         private Button button10;
@@ -297,5 +384,11 @@
         private DataGridView AttedanceLeaveGridview;
         private Label label2;
         private Panel tabelPnl;
+        private Panel pnlAttendanceLeave;
+        private Button btndelete;
+        private Button button13;
+        private Button button1;
+        private Label lblAttendanceLeave;
+        private DataGridView gridAttendanceLeave;
     }
 }
