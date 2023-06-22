@@ -99,7 +99,7 @@ namespace SDA_DBMS_Project
         private void button2_Click(object sender, EventArgs e)
         {
             //btnReporting
-            OpenChildForm(new Forms.FormReporting(), sender);
+            OpenChildForm(new Forms.FormReportModule(), sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -123,7 +123,7 @@ namespace SDA_DBMS_Project
         private void button6_Click(object sender, EventArgs e)
         {
             //btnLeave
-             OpenChildForm(new Forms.FormLeaveManagement(), sender);
+             OpenChildForm(new Forms.FormReporting(), sender);
         }
 
         private void Lovely_Load(object sender, EventArgs e)

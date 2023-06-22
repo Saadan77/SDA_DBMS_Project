@@ -1,42 +1,36 @@
-﻿using System.Data;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SDA_DBMS_Project.Forms
 {
-    public partial class FormLeaveManagement : Form
+    public partial class FormReportModule : Form
     {
         public class Connector
         {
             public static SqlConnection GetConnection()
             {
-                string connectionString = "Data Source=DESKTOP-77CH36A\\SQLEXPRESS;Initial Catalog=Employees;Integrated Security=True";
+                string connectionString = "Data Source=SAADAN2001\\SAADANSQL;Initial Catalog=Employees;Persist Security Info=True;User ID=Saadan;Password=Saadanbinjawad$500";
                 SqlConnection connection = new SqlConnection(connectionString);
                 connection.Open();
                 return connection;
             }
         }
 
-        public FormLeaveManagement()
+        public FormReportModule()
         {
             InitializeComponent();
-            LoadTheme();
 
             pnlEmployeeAttendance.Visible = false;
             pnlLeaveUsage.Visible = false;
             pnlPayrollExpense.Visible = false;
-        }
-        private void LoadTheme()
-        {
-            foreach (Control btns in this.Controls)
-            {
-                if (btns.GetType() == typeof(Button))
-                {
-                    Button btn = (Button)btns;
-                    btn.BackColor = ThemeColor.PrimaryColor;
-                    btn.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
-                }
-            }
         }
 
         private void btnPayrollExpenseView_Click(object sender, EventArgs e)
@@ -113,10 +107,30 @@ namespace SDA_DBMS_Project.Forms
                 MessageBox.Show("An error occurred while displaying Employee Attendance view: " + ex.Message);
             }
         }
+    }
 
-        private void gridLeaveUsage_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    public class Connector
+    {
+        public static SqlConnection GetConnection()
         {
-
+            string connectionString = "Data Source=DESKTOP-77CH36A\\SQLEXPRESS;Initial Catalog=Employees;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            return connection;
         }
     }
+
+    /*private void LoadTheme()
+    {
+        foreach (Control btns in this.Controls)
+        {
+            if (btns.GetType() == typeof(Button))
+            {
+                Button btn = (Button)btns;
+                btn.BackColor = ThemeColor.PrimaryColor;
+                btn.ForeColor = Color.White;
+                btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+            }
+        }
+    }*/
 }

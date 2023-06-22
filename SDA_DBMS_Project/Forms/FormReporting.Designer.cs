@@ -29,159 +29,227 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReporting));
-            this.btnClockInOutView = new System.Windows.Forms.Button();
-            this.btnBreakDurationView = new System.Windows.Forms.Button();
-            this.btnOvertimeHoursView = new System.Windows.Forms.Button();
-            this.pnlClockInOut = new System.Windows.Forms.Panel();
-            this.gridClockView = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pnlBreakView = new System.Windows.Forms.Panel();
-            this.gridBreakView = new System.Windows.Forms.DataGridView();
-            this.pnlOverview = new System.Windows.Forms.Panel();
-            this.gridOvertime = new System.Windows.Forms.DataGridView();
-            this.pnlClockInOut.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridClockView)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.pnlBreakView.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridBreakView)).BeginInit();
-            this.pnlOverview.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridOvertime)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // btnClockInOutView
-            // 
-            this.btnClockInOutView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClockInOutView.FlatAppearance.BorderSize = 0;
-            this.btnClockInOutView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClockInOutView.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClockInOutView.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnClockInOutView.Image = ((System.Drawing.Image)(resources.GetObject("btnClockInOutView.Image")));
-            this.btnClockInOutView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClockInOutView.Location = new System.Drawing.Point(22, 484);
-            this.btnClockInOutView.Name = "btnClockInOutView";
-            this.btnClockInOutView.Size = new System.Drawing.Size(216, 71);
-            this.btnClockInOutView.TabIndex = 24;
-            this.btnClockInOutView.Text = "   ClockInOutView";
-            this.btnClockInOutView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnClockInOutView.UseVisualStyleBackColor = true;
-            // 
-            // btnBreakDurationView
-            // 
-            this.btnBreakDurationView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBreakDurationView.FlatAppearance.BorderSize = 0;
-            this.btnBreakDurationView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBreakDurationView.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBreakDurationView.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnBreakDurationView.Image = ((System.Drawing.Image)(resources.GetObject("btnBreakDurationView.Image")));
-            this.btnBreakDurationView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBreakDurationView.Location = new System.Drawing.Point(22, 599);
-            this.btnBreakDurationView.Name = "btnBreakDurationView";
-            this.btnBreakDurationView.Size = new System.Drawing.Size(216, 71);
-            this.btnBreakDurationView.TabIndex = 25;
-            this.btnBreakDurationView.Text = "BreakDurationView";
-            this.btnBreakDurationView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBreakDurationView.UseVisualStyleBackColor = true;
-            // 
-            // btnOvertimeHoursView
-            // 
-            this.btnOvertimeHoursView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOvertimeHoursView.FlatAppearance.BorderSize = 0;
-            this.btnOvertimeHoursView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOvertimeHoursView.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnOvertimeHoursView.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnOvertimeHoursView.Image = ((System.Drawing.Image)(resources.GetObject("btnOvertimeHoursView.Image")));
-            this.btnOvertimeHoursView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOvertimeHoursView.Location = new System.Drawing.Point(22, 724);
-            this.btnOvertimeHoursView.Name = "btnOvertimeHoursView";
-            this.btnOvertimeHoursView.Size = new System.Drawing.Size(216, 71);
-            this.btnOvertimeHoursView.TabIndex = 26;
-            this.btnOvertimeHoursView.Text = "OvertimeHoursView";
-            this.btnOvertimeHoursView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnOvertimeHoursView.UseVisualStyleBackColor = true;
-            // 
-            // pnlClockInOut
-            // 
-            this.pnlClockInOut.Controls.Add(this.gridClockView);
-            this.pnlClockInOut.Location = new System.Drawing.Point(374, 138);
-            this.pnlClockInOut.Name = "pnlClockInOut";
-            this.pnlClockInOut.Size = new System.Drawing.Size(521, 314);
-            this.pnlClockInOut.TabIndex = 34;
-            // 
-            // gridClockView
-            // 
-            this.gridClockView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridClockView.Location = new System.Drawing.Point(3, 3);
-            this.gridClockView.Name = "gridClockView";
-            this.gridClockView.RowTemplate.Height = 25;
-            this.gridClockView.Size = new System.Drawing.Size(518, 308);
-            this.gridClockView.TabIndex = 0;
+            panel2 = new Panel();
+            btnAttendanceUpdateView = new Button();
+            btnApprovedLeaveView = new Button();
+            btnLeaveBalanceView = new Button();
+            btnLeaveRequestView = new Button();
+            pnlLeaveManagement = new Panel();
+            pnlAttendanceUpdate = new Panel();
+            dataGridView1 = new DataGridView();
+            pnlLeaveRequest = new Panel();
+            gridLeaveRequest = new DataGridView();
+            pnlLeaveBalance = new Panel();
+            gridLeaveBalance = new DataGridView();
+            pnlApprovedLeave = new Panel();
+            gridAttendanceUpdate = new DataGridView();
+            panel2.SuspendLayout();
+            pnlLeaveManagement.SuspendLayout();
+            pnlAttendanceUpdate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            pnlLeaveRequest.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridLeaveRequest).BeginInit();
+            pnlLeaveBalance.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridLeaveBalance).BeginInit();
+            pnlApprovedLeave.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gridAttendanceUpdate).BeginInit();
+            SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel2.Controls.Add(this.btnClockInOutView);
-            this.panel2.Controls.Add(this.btnBreakDurationView);
-            this.panel2.Controls.Add(this.btnOvertimeHoursView);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(219, 450);
-            this.panel2.TabIndex = 33;
+            panel2.BackColor = Color.FromArgb(24, 30, 54);
+            panel2.Controls.Add(btnAttendanceUpdateView);
+            panel2.Controls.Add(btnApprovedLeaveView);
+            panel2.Controls.Add(btnLeaveBalanceView);
+            panel2.Controls.Add(btnLeaveRequestView);
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(4, 5, 4, 5);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(313, 750);
+            panel2.TabIndex = 33;
             // 
-            // pnlBreakView
+            // btnAttendanceUpdateView
             // 
-            this.pnlBreakView.Controls.Add(this.gridBreakView);
-            this.pnlBreakView.Location = new System.Drawing.Point(374, 132);
-            this.pnlBreakView.Name = "pnlBreakView";
-            this.pnlBreakView.Size = new System.Drawing.Size(521, 320);
-            this.pnlBreakView.TabIndex = 31;
+            btnAttendanceUpdateView.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnAttendanceUpdateView.FlatAppearance.BorderSize = 0;
+            btnAttendanceUpdateView.FlatStyle = FlatStyle.Flat;
+            btnAttendanceUpdateView.Font = new Font("Segoe UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAttendanceUpdateView.ForeColor = Color.Gainsboro;
+            btnAttendanceUpdateView.Image = (Image)resources.GetObject("btnAttendanceUpdateView.Image");
+            btnAttendanceUpdateView.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAttendanceUpdateView.Location = new Point(2, 439);
+            btnAttendanceUpdateView.Margin = new Padding(4, 5, 4, 5);
+            btnAttendanceUpdateView.Name = "btnAttendanceUpdateView";
+            btnAttendanceUpdateView.Size = new Size(304, 118);
+            btnAttendanceUpdateView.TabIndex = 30;
+            btnAttendanceUpdateView.Text = "   Attendance Update";
+            btnAttendanceUpdateView.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnAttendanceUpdateView.UseVisualStyleBackColor = true;
+            btnAttendanceUpdateView.Click += btnAttendanceUpdateView_Click;
             // 
-            // gridBreakView
+            // btnApprovedLeaveView
             // 
-            this.gridBreakView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridBreakView.Location = new System.Drawing.Point(0, 0);
-            this.gridBreakView.Name = "gridBreakView";
-            this.gridBreakView.RowTemplate.Height = 25;
-            this.gridBreakView.Size = new System.Drawing.Size(518, 317);
-            this.gridBreakView.TabIndex = 0;
+            btnApprovedLeaveView.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnApprovedLeaveView.FlatAppearance.BorderSize = 0;
+            btnApprovedLeaveView.FlatStyle = FlatStyle.Flat;
+            btnApprovedLeaveView.Font = new Font("Segoe UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnApprovedLeaveView.ForeColor = Color.Gainsboro;
+            btnApprovedLeaveView.Image = (Image)resources.GetObject("btnApprovedLeaveView.Image");
+            btnApprovedLeaveView.ImageAlign = ContentAlignment.MiddleLeft;
+            btnApprovedLeaveView.Location = new Point(5, 311);
+            btnApprovedLeaveView.Margin = new Padding(4, 5, 4, 5);
+            btnApprovedLeaveView.Name = "btnApprovedLeaveView";
+            btnApprovedLeaveView.Size = new Size(304, 118);
+            btnApprovedLeaveView.TabIndex = 29;
+            btnApprovedLeaveView.Text = "   Approved Leave";
+            btnApprovedLeaveView.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnApprovedLeaveView.UseVisualStyleBackColor = true;
+            btnApprovedLeaveView.Click += btnApprovedLeaveView_Click;
             // 
-            // pnlOverview
+            // btnLeaveBalanceView
             // 
-            this.pnlOverview.Controls.Add(this.gridOvertime);
-            this.pnlOverview.Location = new System.Drawing.Point(374, 132);
-            this.pnlOverview.Name = "pnlOverview";
-            this.pnlOverview.Size = new System.Drawing.Size(521, 317);
-            this.pnlOverview.TabIndex = 32;
+            btnLeaveBalanceView.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnLeaveBalanceView.FlatAppearance.BorderSize = 0;
+            btnLeaveBalanceView.FlatStyle = FlatStyle.Flat;
+            btnLeaveBalanceView.Font = new Font("Segoe UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLeaveBalanceView.ForeColor = Color.Gainsboro;
+            btnLeaveBalanceView.Image = (Image)resources.GetObject("btnLeaveBalanceView.Image");
+            btnLeaveBalanceView.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLeaveBalanceView.Location = new Point(5, 183);
+            btnLeaveBalanceView.Margin = new Padding(4, 5, 4, 5);
+            btnLeaveBalanceView.Name = "btnLeaveBalanceView";
+            btnLeaveBalanceView.Size = new Size(304, 118);
+            btnLeaveBalanceView.TabIndex = 28;
+            btnLeaveBalanceView.Text = "   Leave Balances";
+            btnLeaveBalanceView.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLeaveBalanceView.UseVisualStyleBackColor = true;
+            btnLeaveBalanceView.Click += btnLeaveBalanceView_Click;
             // 
-            // gridOvertime
+            // btnLeaveRequestView
             // 
-            this.gridOvertime.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridOvertime.Location = new System.Drawing.Point(0, 0);
-            this.gridOvertime.Name = "gridOvertime";
-            this.gridOvertime.RowTemplate.Height = 25;
-            this.gridOvertime.Size = new System.Drawing.Size(518, 317);
-            this.gridOvertime.TabIndex = 0;
+            btnLeaveRequestView.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnLeaveRequestView.FlatAppearance.BorderSize = 0;
+            btnLeaveRequestView.FlatStyle = FlatStyle.Flat;
+            btnLeaveRequestView.Font = new Font("Segoe UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLeaveRequestView.ForeColor = Color.Gainsboro;
+            btnLeaveRequestView.Image = (Image)resources.GetObject("btnLeaveRequestView.Image");
+            btnLeaveRequestView.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLeaveRequestView.Location = new Point(4, 55);
+            btnLeaveRequestView.Margin = new Padding(4, 5, 4, 5);
+            btnLeaveRequestView.Name = "btnLeaveRequestView";
+            btnLeaveRequestView.Size = new Size(304, 118);
+            btnLeaveRequestView.TabIndex = 27;
+            btnLeaveRequestView.Text = "   Leave Request";
+            btnLeaveRequestView.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLeaveRequestView.UseVisualStyleBackColor = true;
+            btnLeaveRequestView.Click += btnLeaveRequestView_Click;
+            // 
+            // pnlLeaveManagement
+            // 
+            pnlLeaveManagement.Controls.Add(pnlAttendanceUpdate);
+            pnlLeaveManagement.Controls.Add(pnlLeaveRequest);
+            pnlLeaveManagement.Controls.Add(pnlLeaveBalance);
+            pnlLeaveManagement.Controls.Add(pnlApprovedLeave);
+            pnlLeaveManagement.Location = new Point(314, 0);
+            pnlLeaveManagement.Margin = new Padding(4, 5, 4, 5);
+            pnlLeaveManagement.Name = "pnlLeaveManagement";
+            pnlLeaveManagement.Size = new Size(990, 750);
+            pnlLeaveManagement.TabIndex = 32;
+            // 
+            // pnlAttendanceUpdate
+            // 
+            pnlAttendanceUpdate.Controls.Add(dataGridView1);
+            pnlAttendanceUpdate.Location = new Point(0, 0);
+            pnlAttendanceUpdate.Name = "pnlAttendanceUpdate";
+            pnlAttendanceUpdate.Size = new Size(990, 744);
+            pnlAttendanceUpdate.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(123, 108);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.RowTemplate.Height = 33;
+            dataGridView1.Size = new Size(781, 353);
+            dataGridView1.TabIndex = 0;
+            // 
+            // pnlLeaveRequest
+            // 
+            pnlLeaveRequest.Controls.Add(gridLeaveRequest);
+            pnlLeaveRequest.Location = new Point(0, 0);
+            pnlLeaveRequest.Name = "pnlLeaveRequest";
+            pnlLeaveRequest.Size = new Size(996, 744);
+            pnlLeaveRequest.TabIndex = 3;
+            // 
+            // gridLeaveRequest
+            // 
+            gridLeaveRequest.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridLeaveRequest.Location = new Point(159, 108);
+            gridLeaveRequest.Name = "gridLeaveRequest";
+            gridLeaveRequest.RowHeadersWidth = 62;
+            gridLeaveRequest.RowTemplate.Height = 33;
+            gridLeaveRequest.Size = new Size(740, 353);
+            gridLeaveRequest.TabIndex = 0;
+            // 
+            // pnlLeaveBalance
+            // 
+            pnlLeaveBalance.Controls.Add(gridLeaveBalance);
+            pnlLeaveBalance.Location = new Point(0, 3);
+            pnlLeaveBalance.Name = "pnlLeaveBalance";
+            pnlLeaveBalance.Size = new Size(987, 741);
+            pnlLeaveBalance.TabIndex = 3;
+            // 
+            // gridLeaveBalance
+            // 
+            gridLeaveBalance.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridLeaveBalance.Location = new Point(164, 108);
+            gridLeaveBalance.Name = "gridLeaveBalance";
+            gridLeaveBalance.RowHeadersWidth = 62;
+            gridLeaveBalance.RowTemplate.Height = 33;
+            gridLeaveBalance.Size = new Size(740, 353);
+            gridLeaveBalance.TabIndex = 2;
+            // 
+            // pnlApprovedLeave
+            // 
+            pnlApprovedLeave.Controls.Add(gridAttendanceUpdate);
+            pnlApprovedLeave.Location = new Point(0, 0);
+            pnlApprovedLeave.Name = "pnlApprovedLeave";
+            pnlApprovedLeave.Size = new Size(990, 747);
+            pnlApprovedLeave.TabIndex = 3;
+            // 
+            // gridAttendanceUpdate
+            // 
+            gridAttendanceUpdate.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridAttendanceUpdate.Location = new Point(164, 108);
+            gridAttendanceUpdate.Name = "gridAttendanceUpdate";
+            gridAttendanceUpdate.RowHeadersWidth = 62;
+            gridAttendanceUpdate.RowTemplate.Height = 33;
+            gridAttendanceUpdate.Size = new Size(740, 353);
+            gridAttendanceUpdate.TabIndex = 0;
             // 
             // FormReporting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(915, 450);
-            this.Controls.Add(this.pnlClockInOut);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pnlBreakView);
-            this.Controls.Add(this.pnlOverview);
-            this.Name = "FormReporting";
-            this.Text = "FormReporting";
-            this.pnlClockInOut.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridClockView)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.pnlBreakView.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridBreakView)).EndInit();
-            this.pnlOverview.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridOvertime)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1307, 750);
+            Controls.Add(panel2);
+            Controls.Add(pnlLeaveManagement);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "FormReporting";
+            Text = "Form Leave Management";
+            panel2.ResumeLayout(false);
+            pnlLeaveManagement.ResumeLayout(false);
+            pnlAttendanceUpdate.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            pnlLeaveRequest.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gridLeaveRequest).EndInit();
+            pnlLeaveBalance.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gridLeaveBalance).EndInit();
+            pnlApprovedLeave.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)gridAttendanceUpdate).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -195,18 +263,18 @@
         private Label label2;
         private TextBox textBox1;
         private Label label1;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Button btnClockInOutView;
-        private Button btnBreakDurationView;
-        private Button btnOvertimeHoursView;
-        private Panel pnlClockInOut;
-        private DataGridView gridClockView;
+        private Button btnAttendanceUpdateView;
+        private Button btnApprovedLeaveView;
+        private Button btnLeaveBalanceView;
         private Panel panel2;
-        private Panel pnlBreakView;
-        private DataGridView gridBreakView;
-        private Panel pnlOverview;
-        private DataGridView gridOvertime;
+        private Panel pnlLeaveManagement;
+        private Panel pnlLeaveRequest;
+        private DataGridView gridLeaveRequest;
+        private Panel pnlLeaveBalance;
+        private DataGridView gridLeaveBalance;
+        private Panel pnlApprovedLeave;
+        private DataGridView gridAttendanceUpdate;
+        private Button btnLeaveRequestView;
+        private Panel pnlAttendanceUpdate;
     }
 }
