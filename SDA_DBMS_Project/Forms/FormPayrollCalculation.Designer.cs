@@ -182,6 +182,7 @@
             btnPayrollReport.Text = "Payroll Report";
             btnPayrollReport.TextImageRelation = TextImageRelation.TextBeforeImage;
             btnPayrollReport.UseVisualStyleBackColor = true;
+            btnPayrollReport.Click += btnPayrollReport_Click_1;
             // 
             // lblTitle
             // 

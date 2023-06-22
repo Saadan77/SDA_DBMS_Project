@@ -46,7 +46,19 @@ namespace SDA_DBMS_Project.Forms
             }
         }
 
-        private void btnPayrollReport_Click(object sender, EventArgs e)
+        private void btnLeave_Click(object sender, EventArgs e)
+        {
+            FormReportModule openForm = new FormReportModule();
+            openForm.Show();
+        }
+
+        private void btnAttendance_Click(object sender, EventArgs e)
+        {
+            FormAttendance openForm = new FormAttendance();
+            openForm.Show();
+        }
+
+        private void btnPayrollReport_Click_1(object sender, EventArgs e)
         {
             pnlPayrollReport.Visible = true;
             pnlPayslip.Visible = false;
@@ -92,18 +104,6 @@ namespace SDA_DBMS_Project.Forms
             {
                 MessageBox.Show("An error occurred while displaying payroll slip view: " + ex.Message);
             }
-        }
-
-        private void btnLeave_Click(object sender, EventArgs e)
-        {
-            FormLeaveManagement openForm = new FormLeaveManagement();
-            openForm.Show();
-        }
-
-        private void btnAttendance_Click(object sender, EventArgs e)
-        {
-            FormAttendance openForm = new FormAttendance();
-            openForm.Show();
         }
     }
 }

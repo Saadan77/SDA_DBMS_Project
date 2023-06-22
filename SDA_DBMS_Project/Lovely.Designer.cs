@@ -29,330 +29,349 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lovely));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnLeave = new System.Windows.Forms.Button();
-            this.btnPcalculation = new System.Windows.Forms.Button();
-            this.btnPprocessing = new System.Windows.Forms.Button();
-            this.btnAttendance = new System.Windows.Forms.Button();
-            this.btnReporting = new System.Windows.Forms.Button();
-            this.btnManagement = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.btnMinimize = new System.Windows.Forms.Button();
-            this.btnMaximize = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnCloseChildForm = new System.Windows.Forms.Button();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.panelDesktopPanel = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            this.panelLogo.SuspendLayout();
-            this.panelTitleBar.SuspendLayout();
-            this.panelDesktopPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            button1 = new Button();
+            btnLeave = new Button();
+            btnPcalculation = new Button();
+            btnPprocessing = new Button();
+            btnAttendance = new Button();
+            btnReport = new Button();
+            btnManagement = new Button();
+            panelLogo = new Panel();
+            label1 = new Label();
+            panelTitleBar = new Panel();
+            btnMinimize = new Button();
+            btnMaximize = new Button();
+            btnClose = new Button();
+            btnCloseChildForm = new Button();
+            lblTitle = new Label();
+            panelDesktopPanel = new Panel();
+            label2 = new Label();
+            pictureBox1 = new PictureBox();
+            panel1.SuspendLayout();
+            panelLogo.SuspendLayout();
+            panelTitleBar.SuspendLayout();
+            panelDesktopPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.btnLeave);
-            this.panel1.Controls.Add(this.btnPcalculation);
-            this.panel1.Controls.Add(this.btnPprocessing);
-            this.panel1.Controls.Add(this.btnAttendance);
-            this.panel1.Controls.Add(this.btnReporting);
-            this.panel1.Controls.Add(this.btnManagement);
-            this.panel1.Controls.Add(this.panelLogo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 561);
-            this.panel1.TabIndex = 0;
+            panel1.BackColor = Color.FromArgb(51, 51, 76);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btnLeave);
+            panel1.Controls.Add(btnPcalculation);
+            panel1.Controls.Add(btnPprocessing);
+            panel1.Controls.Add(btnAttendance);
+            panel1.Controls.Add(btnReport);
+            panel1.Controls.Add(btnManagement);
+            panel1.Controls.Add(panelLogo);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(4, 5, 4, 5);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(314, 935);
+            panel1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 440);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 60);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "   Employees";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            button1.Dock = DockStyle.Top;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.Gainsboro;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(0, 733);
+            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.Name = "button1";
+            button1.Size = new Size(314, 100);
+            button1.TabIndex = 7;
+            button1.Text = "   Employees";
+            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // btnLeave
             // 
-            this.btnLeave.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLeave.FlatAppearance.BorderSize = 0;
-            this.btnLeave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLeave.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnLeave.Image = ((System.Drawing.Image)(resources.GetObject("btnLeave.Image")));
-            this.btnLeave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLeave.Location = new System.Drawing.Point(0, 380);
-            this.btnLeave.Name = "btnLeave";
-            this.btnLeave.Size = new System.Drawing.Size(220, 60);
-            this.btnLeave.TabIndex = 6;
-            this.btnLeave.Text = " Reporting and Analytics";
-            this.btnLeave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLeave.UseVisualStyleBackColor = true;
-            this.btnLeave.Click += new System.EventHandler(this.button6_Click);
+            btnLeave.Dock = DockStyle.Top;
+            btnLeave.FlatAppearance.BorderSize = 0;
+            btnLeave.FlatStyle = FlatStyle.Flat;
+            btnLeave.ForeColor = Color.Gainsboro;
+            btnLeave.Image = (Image)resources.GetObject("btnLeave.Image");
+            btnLeave.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLeave.Location = new Point(0, 633);
+            btnLeave.Margin = new Padding(4, 5, 4, 5);
+            btnLeave.Name = "btnLeave";
+            btnLeave.Size = new Size(314, 100);
+            btnLeave.TabIndex = 6;
+            btnLeave.Text = " Reporting and Analytics";
+            btnLeave.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLeave.UseVisualStyleBackColor = true;
+            btnLeave.Click += btnLeave_Click;
             // 
             // btnPcalculation
             // 
-            this.btnPcalculation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPcalculation.FlatAppearance.BorderSize = 0;
-            this.btnPcalculation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPcalculation.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPcalculation.Image = ((System.Drawing.Image)(resources.GetObject("btnPcalculation.Image")));
-            this.btnPcalculation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPcalculation.Location = new System.Drawing.Point(0, 320);
-            this.btnPcalculation.Name = "btnPcalculation";
-            this.btnPcalculation.Size = new System.Drawing.Size(220, 60);
-            this.btnPcalculation.TabIndex = 5;
-            this.btnPcalculation.Text = "   Payroll Calculation";
-            this.btnPcalculation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPcalculation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPcalculation.UseVisualStyleBackColor = true;
-            this.btnPcalculation.Click += new System.EventHandler(this.button5_Click);
+            btnPcalculation.Dock = DockStyle.Top;
+            btnPcalculation.FlatAppearance.BorderSize = 0;
+            btnPcalculation.FlatStyle = FlatStyle.Flat;
+            btnPcalculation.ForeColor = Color.Gainsboro;
+            btnPcalculation.Image = (Image)resources.GetObject("btnPcalculation.Image");
+            btnPcalculation.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPcalculation.Location = new Point(0, 533);
+            btnPcalculation.Margin = new Padding(4, 5, 4, 5);
+            btnPcalculation.Name = "btnPcalculation";
+            btnPcalculation.Size = new Size(314, 100);
+            btnPcalculation.TabIndex = 5;
+            btnPcalculation.Text = "   Payroll Calculation";
+            btnPcalculation.TextAlign = ContentAlignment.MiddleLeft;
+            btnPcalculation.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnPcalculation.UseVisualStyleBackColor = true;
+            btnPcalculation.Click += button5_Click;
             // 
             // btnPprocessing
             // 
-            this.btnPprocessing.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPprocessing.FlatAppearance.BorderSize = 0;
-            this.btnPprocessing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPprocessing.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPprocessing.Image = ((System.Drawing.Image)(resources.GetObject("btnPprocessing.Image")));
-            this.btnPprocessing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPprocessing.Location = new System.Drawing.Point(0, 260);
-            this.btnPprocessing.Name = "btnPprocessing";
-            this.btnPprocessing.Size = new System.Drawing.Size(220, 60);
-            this.btnPprocessing.TabIndex = 4;
-            this.btnPprocessing.Text = "   Payroll Processing";
-            this.btnPprocessing.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPprocessing.UseVisualStyleBackColor = true;
-            this.btnPprocessing.Click += new System.EventHandler(this.button4_Click);
+            btnPprocessing.Dock = DockStyle.Top;
+            btnPprocessing.FlatAppearance.BorderSize = 0;
+            btnPprocessing.FlatStyle = FlatStyle.Flat;
+            btnPprocessing.ForeColor = Color.Gainsboro;
+            btnPprocessing.Image = (Image)resources.GetObject("btnPprocessing.Image");
+            btnPprocessing.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPprocessing.Location = new Point(0, 433);
+            btnPprocessing.Margin = new Padding(4, 5, 4, 5);
+            btnPprocessing.Name = "btnPprocessing";
+            btnPprocessing.Size = new Size(314, 100);
+            btnPprocessing.TabIndex = 4;
+            btnPprocessing.Text = "   Payroll Processing";
+            btnPprocessing.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnPprocessing.UseVisualStyleBackColor = true;
+            btnPprocessing.Click += button4_Click;
             // 
             // btnAttendance
             // 
-            this.btnAttendance.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAttendance.FlatAppearance.BorderSize = 0;
-            this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAttendance.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAttendance.Image = ((System.Drawing.Image)(resources.GetObject("btnAttendance.Image")));
-            this.btnAttendance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAttendance.Location = new System.Drawing.Point(0, 200);
-            this.btnAttendance.Name = "btnAttendance";
-            this.btnAttendance.Size = new System.Drawing.Size(220, 60);
-            this.btnAttendance.TabIndex = 3;
-            this.btnAttendance.Text = "   Attendance";
-            this.btnAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAttendance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAttendance.UseVisualStyleBackColor = true;
-            this.btnAttendance.Click += new System.EventHandler(this.button3_Click);
+            btnAttendance.Dock = DockStyle.Top;
+            btnAttendance.FlatAppearance.BorderSize = 0;
+            btnAttendance.FlatStyle = FlatStyle.Flat;
+            btnAttendance.ForeColor = Color.Gainsboro;
+            btnAttendance.Image = (Image)resources.GetObject("btnAttendance.Image");
+            btnAttendance.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAttendance.Location = new Point(0, 333);
+            btnAttendance.Margin = new Padding(4, 5, 4, 5);
+            btnAttendance.Name = "btnAttendance";
+            btnAttendance.Size = new Size(314, 100);
+            btnAttendance.TabIndex = 3;
+            btnAttendance.Text = "   Attendance";
+            btnAttendance.TextAlign = ContentAlignment.MiddleLeft;
+            btnAttendance.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnAttendance.UseVisualStyleBackColor = true;
+            btnAttendance.Click += button3_Click;
             // 
-            // btnReporting
+            // btnReport
             // 
-            this.btnReporting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReporting.FlatAppearance.BorderSize = 0;
-            this.btnReporting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporting.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnReporting.Image = ((System.Drawing.Image)(resources.GetObject("btnReporting.Image")));
-            this.btnReporting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReporting.Location = new System.Drawing.Point(0, 140);
-            this.btnReporting.Name = "btnReporting";
-            this.btnReporting.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnReporting.Size = new System.Drawing.Size(220, 60);
-            this.btnReporting.TabIndex = 2;
-            this.btnReporting.Text = " Leave Management";
-            this.btnReporting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReporting.UseVisualStyleBackColor = true;
-            this.btnReporting.Click += new System.EventHandler(this.button2_Click);
+            btnReport.Dock = DockStyle.Top;
+            btnReport.FlatAppearance.BorderSize = 0;
+            btnReport.FlatStyle = FlatStyle.Flat;
+            btnReport.ForeColor = Color.Gainsboro;
+            btnReport.Image = (Image)resources.GetObject("btnReport.Image");
+            btnReport.ImageAlign = ContentAlignment.MiddleLeft;
+            btnReport.Location = new Point(0, 233);
+            btnReport.Margin = new Padding(4, 5, 4, 5);
+            btnReport.Name = "btnReport";
+            btnReport.RightToLeft = RightToLeft.No;
+            btnReport.Size = new Size(314, 100);
+            btnReport.TabIndex = 2;
+            btnReport.Text = " Leave Management";
+            btnReport.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnReport.UseVisualStyleBackColor = true;
+            btnReport.Click += button2_Click;
             // 
             // btnManagement
             // 
-            this.btnManagement.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnManagement.FlatAppearance.BorderSize = 0;
-            this.btnManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManagement.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnManagement.Image = ((System.Drawing.Image)(resources.GetObject("btnManagement.Image")));
-            this.btnManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManagement.Location = new System.Drawing.Point(0, 80);
-            this.btnManagement.Name = "btnManagement";
-            this.btnManagement.Size = new System.Drawing.Size(220, 60);
-            this.btnManagement.TabIndex = 1;
-            this.btnManagement.Text = "   Employee Management";
-            this.btnManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnManagement.UseVisualStyleBackColor = true;
-            this.btnManagement.Click += new System.EventHandler(this.button1_Click);
+            btnManagement.Dock = DockStyle.Top;
+            btnManagement.FlatAppearance.BorderSize = 0;
+            btnManagement.FlatStyle = FlatStyle.Flat;
+            btnManagement.ForeColor = Color.Gainsboro;
+            btnManagement.Image = (Image)resources.GetObject("btnManagement.Image");
+            btnManagement.ImageAlign = ContentAlignment.MiddleLeft;
+            btnManagement.Location = new Point(0, 133);
+            btnManagement.Margin = new Padding(4, 5, 4, 5);
+            btnManagement.Name = "btnManagement";
+            btnManagement.Size = new Size(314, 100);
+            btnManagement.TabIndex = 1;
+            btnManagement.Text = "   Employee Management";
+            btnManagement.TextAlign = ContentAlignment.MiddleLeft;
+            btnManagement.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnManagement.UseVisualStyleBackColor = true;
+            btnManagement.Click += button1_Click;
             // 
             // panelLogo
             // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelLogo.Controls.Add(this.label1);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 80);
-            this.panelLogo.TabIndex = 0;
+            panelLogo.BackColor = Color.FromArgb(39, 39, 58);
+            panelLogo.Controls.Add(label1);
+            panelLogo.Dock = DockStyle.Top;
+            panelLogo.Location = new Point(0, 0);
+            panelLogo.Margin = new Padding(4, 5, 4, 5);
+            panelLogo.Name = "panelLogo";
+            panelLogo.Size = new Size(314, 133);
+            panelLogo.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(25, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Employee Payroll System";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.LightGray;
+            label1.Location = new Point(36, 42);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(266, 31);
+            label1.TabIndex = 0;
+            label1.Text = "Employee Payroll System";
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.panelTitleBar.Controls.Add(this.btnMinimize);
-            this.panelTitleBar.Controls.Add(this.btnMaximize);
-            this.panelTitleBar.Controls.Add(this.btnClose);
-            this.panelTitleBar.Controls.Add(this.btnCloseChildForm);
-            this.panelTitleBar.Controls.Add(this.lblTitle);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(793, 80);
-            this.panelTitleBar.TabIndex = 1;
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            panelTitleBar.BackColor = Color.FromArgb(0, 150, 136);
+            panelTitleBar.Controls.Add(btnMinimize);
+            panelTitleBar.Controls.Add(btnMaximize);
+            panelTitleBar.Controls.Add(btnClose);
+            panelTitleBar.Controls.Add(btnCloseChildForm);
+            panelTitleBar.Controls.Add(lblTitle);
+            panelTitleBar.Dock = DockStyle.Top;
+            panelTitleBar.Location = new Point(314, 0);
+            panelTitleBar.Margin = new Padding(4, 5, 4, 5);
+            panelTitleBar.Name = "panelTitleBar";
+            panelTitleBar.Size = new Size(1133, 133);
+            panelTitleBar.TabIndex = 1;
+            panelTitleBar.MouseDown += panelTitleBar_MouseDown;
             // 
             // btnMinimize
             // 
-            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMinimize.ForeColor = System.Drawing.Color.White;
-            this.btnMinimize.Location = new System.Drawing.Point(712, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
-            this.btnMinimize.TabIndex = 4;
-            this.btnMinimize.Text = "O";
-            this.btnMinimize.UseVisualStyleBackColor = true;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            btnMinimize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnMinimize.FlatAppearance.BorderSize = 0;
+            btnMinimize.FlatStyle = FlatStyle.Flat;
+            btnMinimize.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnMinimize.ForeColor = Color.White;
+            btnMinimize.Location = new Point(1017, 0);
+            btnMinimize.Margin = new Padding(4, 5, 4, 5);
+            btnMinimize.Name = "btnMinimize";
+            btnMinimize.Size = new Size(43, 50);
+            btnMinimize.TabIndex = 4;
+            btnMinimize.Text = "O";
+            btnMinimize.UseVisualStyleBackColor = true;
+            btnMinimize.Click += btnMinimize_Click;
             // 
             // btnMaximize
             // 
-            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.FlatAppearance.BorderSize = 0;
-            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMaximize.ForeColor = System.Drawing.Color.White;
-            this.btnMaximize.Location = new System.Drawing.Point(735, 0);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(30, 30);
-            this.btnMaximize.TabIndex = 3;
-            this.btnMaximize.Text = "O";
-            this.btnMaximize.UseVisualStyleBackColor = true;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            btnMaximize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnMaximize.FlatAppearance.BorderSize = 0;
+            btnMaximize.FlatStyle = FlatStyle.Flat;
+            btnMaximize.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnMaximize.ForeColor = Color.White;
+            btnMaximize.Location = new Point(1050, 0);
+            btnMaximize.Margin = new Padding(4, 5, 4, 5);
+            btnMaximize.Name = "btnMaximize";
+            btnMaximize.Size = new Size(43, 50);
+            btnMaximize.TabIndex = 3;
+            btnMaximize.Text = "O";
+            btnMaximize.UseVisualStyleBackColor = true;
+            btnMaximize.Click += btnMaximize_Click;
             // 
             // btnClose
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(760, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(30, 30);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "O";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            btnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnClose.FlatAppearance.BorderSize = 0;
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnClose.ForeColor = Color.White;
+            btnClose.Location = new Point(1086, 0);
+            btnClose.Margin = new Padding(4, 5, 4, 5);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(43, 50);
+            btnClose.TabIndex = 2;
+            btnClose.Text = "O";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // btnCloseChildForm
             // 
-            this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
-            this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseChildForm.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseChildForm.Image")));
-            this.btnCloseChildForm.Location = new System.Drawing.Point(0, 0);
-            this.btnCloseChildForm.Name = "btnCloseChildForm";
-            this.btnCloseChildForm.Size = new System.Drawing.Size(75, 80);
-            this.btnCloseChildForm.TabIndex = 1;
-            this.btnCloseChildForm.UseVisualStyleBackColor = true;
-            this.btnCloseChildForm.Click += new System.EventHandler(this.btnCloseChildForm_Click);
+            btnCloseChildForm.Dock = DockStyle.Left;
+            btnCloseChildForm.FlatAppearance.BorderSize = 0;
+            btnCloseChildForm.FlatStyle = FlatStyle.Flat;
+            btnCloseChildForm.Image = (Image)resources.GetObject("btnCloseChildForm.Image");
+            btnCloseChildForm.Location = new Point(0, 0);
+            btnCloseChildForm.Margin = new Padding(4, 5, 4, 5);
+            btnCloseChildForm.Name = "btnCloseChildForm";
+            btnCloseChildForm.Size = new Size(107, 133);
+            btnCloseChildForm.TabIndex = 1;
+            btnCloseChildForm.UseVisualStyleBackColor = true;
+            btnCloseChildForm.Click += btnCloseChildForm_Click;
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(342, 25);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(78, 26);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "HOME";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTitle.ForeColor = Color.White;
+            lblTitle.Location = new Point(489, 42);
+            lblTitle.Margin = new Padding(4, 0, 4, 0);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(112, 37);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "HOME";
             // 
             // panelDesktopPanel
             // 
-            this.panelDesktopPanel.Controls.Add(this.label2);
-            this.panelDesktopPanel.Controls.Add(this.pictureBox1);
-            this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPanel.Location = new System.Drawing.Point(220, 80);
-            this.panelDesktopPanel.Name = "panelDesktopPanel";
-            this.panelDesktopPanel.Size = new System.Drawing.Size(793, 481);
-            this.panelDesktopPanel.TabIndex = 2;
+            panelDesktopPanel.Controls.Add(label2);
+            panelDesktopPanel.Controls.Add(pictureBox1);
+            panelDesktopPanel.Dock = DockStyle.Fill;
+            panelDesktopPanel.Location = new Point(314, 133);
+            panelDesktopPanel.Margin = new Padding(4, 5, 4, 5);
+            panelDesktopPanel.Name = "panelDesktopPanel";
+            panelDesktopPanel.Size = new Size(1133, 802);
+            panelDesktopPanel.TabIndex = 2;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(208, 180);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(585, 40);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Employee Attendance and Payroll System";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.DimGray;
+            label2.Location = new Point(297, 300);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(884, 60);
+            label2.TabIndex = 1;
+            label2.Text = "Employee Attendance and Payroll System";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(66, 150);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(141, 106);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(94, 250);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(201, 177);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // Lovely
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 561);
-            this.Controls.Add(this.panelDesktopPanel);
-            this.Controls.Add(this.panelTitleBar);
-            this.Controls.Add(this.panel1);
-            this.MinimumSize = new System.Drawing.Size(990, 600);
-            this.Name = "Lovely";
-            this.Text = "Lovely";
-            this.Load += new System.EventHandler(this.Lovely_Load);
-            this.panel1.ResumeLayout(false);
-            this.panelLogo.ResumeLayout(false);
-            this.panelLogo.PerformLayout();
-            this.panelTitleBar.ResumeLayout(false);
-            this.panelTitleBar.PerformLayout();
-            this.panelDesktopPanel.ResumeLayout(false);
-            this.panelDesktopPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1447, 935);
+            Controls.Add(panelDesktopPanel);
+            Controls.Add(panelTitleBar);
+            Controls.Add(panel1);
+            Margin = new Padding(4, 5, 4, 5);
+            MinimumSize = new Size(1405, 963);
+            Name = "Lovely";
+            Text = "Lovely";
+            Load += Lovely_Load;
+            panel1.ResumeLayout(false);
+            panelLogo.ResumeLayout(false);
+            panelLogo.PerformLayout();
+            panelTitleBar.ResumeLayout(false);
+            panelTitleBar.PerformLayout();
+            panelDesktopPanel.ResumeLayout(false);
+            panelDesktopPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -364,7 +383,7 @@
         private Button btnPcalculation;
         private Button btnPprocessing;
         private Button btnAttendance;
-        private Button btnReporting;
+        private Button btnReport;
         private Label label1;
         private Panel panelTitleBar;
         private Label lblTitle;

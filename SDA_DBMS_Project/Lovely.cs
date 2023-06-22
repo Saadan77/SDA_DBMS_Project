@@ -99,7 +99,7 @@ namespace SDA_DBMS_Project
         private void button2_Click(object sender, EventArgs e)
         {
             //btnReporting
-            OpenChildForm(new Forms.FormReportModule(), sender);
+            OpenChildForm(new Forms.FormReporting(), sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -120,11 +120,10 @@ namespace SDA_DBMS_Project
             OpenChildForm(new Forms.FormPayrollCalculation(), sender);
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        /*private void button6_Click(object sender, EventArgs e)
         {
-            //btnLeave
-             OpenChildForm(new Forms.FormReporting(), sender);
-        }
+            OpenChildForm(new Forms.FormReportModule(), sender);
+        }*/
 
         private void Lovely_Load(object sender, EventArgs e)
         {
@@ -176,5 +175,15 @@ namespace SDA_DBMS_Project
             //btn for Employees form
             OpenChildForm(new Forms.Tables(), sender);
         }
+
+        private void btnLeave_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormReportModule(), sender);
+        }
+
+        /* private void btnLeave_Click(object sender, EventArgs e)
+         {
+             OpenChildForm(new Forms.FormReportModule(), sender);
+         }*/
     }
 }

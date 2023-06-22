@@ -17,7 +17,7 @@ namespace SDA_DBMS_Project.Forms
         {
             public static SqlConnection GetConnection()
             {
-                string connectionString = "Data Source=DESKTOP-TV1A0O3\\SQLEXPRESS;Initial Catalog=Employees;Integrated Security=True";
+                string connectionString = "Data Source=SAADAN2001\\SAADANSQL;Initial Catalog=Employees;Persist Security Info=True;User ID=Saadan;Password=Saadanbinjawad$500";
                 SqlConnection connection = new SqlConnection(connectionString);
                 connection.Open();
                 return connection;
