@@ -113,5 +113,10 @@ namespace SDA_DBMS_Project.Forms
                 MessageBox.Show("An error occurred while displaying Employee Attendance view: " + ex.Message);
             }
         }
+
+        private void gridLeaveUsage_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
