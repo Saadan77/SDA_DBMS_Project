@@ -170,5 +170,11 @@ namespace SDA_DBMS_Project
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //btn for Employees form
+            OpenChildForm(new Forms.Tables(), sender);
+        }
     }
 }
