@@ -16,7 +16,7 @@ namespace SDA_DBMS_Project.Forms
     {
         public class Connector
         {
-            private static string connectionString = "Data Source=DESKTOP-TV1A0O3\\SQLEXPRESS;Initial Catalog=Employees;Integrated Security=True";
+            private static string connectionString = "Data Source=DESKTOP-77CH36A\\SQLEXPRESS;Initial Catalog=Employees;Integrated Security=True";
 
             public static SqlConnection GetConnection()
             {
@@ -96,6 +96,56 @@ namespace SDA_DBMS_Project.Forms
         }
 
         private void pnlAttendanceLeave_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            pnlAttendanceLeave.Visible = true;
+
+
+            try
+            {
+                using (SqlConnection connection = Connector.GetConnection())
+                {
+                    //MessageBox.Show("Success");
+                    SqlCommand command = new SqlCommand("EXEC sp_InsertAttendanceAndLeaveManagement", connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    gridAttendanceLeave.DataSource = dataTable;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while inserting employee data: " + ex.Message);
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
         {
 
         }
