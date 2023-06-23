@@ -51,6 +51,10 @@ namespace SDA_DBMS_Project.Forms
             pnlBenefits.Visible = false;
             pnlEmployee.Visible = false;
             panelDesktopPanel.Visible = false;
+            pnlTimeAndAttendance.Visible = false;
+            panelRecruitment.Visible = false;
+            panelPayrollManagement.Visible = false;
+            pnlPayrollAttenfdance.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -333,6 +337,86 @@ namespace SDA_DBMS_Project.Forms
             {
                 MessageBox.Show("An error occurred while inserting benefits data: " + ex.Message);
             }
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlTimeAndAttendance_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTimeAndAttendance_Click(object sender, EventArgs e)
+        {
+            hidePnls();
+            pnlTimeAndAttendance.Visible = true;
+        }
+
+        private void btnRecruitement_Click(object sender, EventArgs e)
+        {
+            hidePnls();
+            panelRecruitment.Visible = true;
+        }
+
+        private void panelPayrollManagement_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label42_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelRecruitment_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void btnPayrollManagement_Click(object sender, EventArgs e)
+        {
+            hidePnls();
+            panelPayrollManagement.Visible = true;
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label46_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPayrollAttendance_Click(object sender, EventArgs e)
+        {
+            hidePnls();
+            pnlPayrollAttenfdance.Visible = true;
         }
     }
 }
