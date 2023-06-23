@@ -38,23 +38,30 @@ namespace SDA_DBMS_Project.Forms
                 }
             }
         }
+
         public Tables()
         {
             InitializeComponent();
-            pnlAttendanceLeave.Visible = false;
+            hidePnls();
+            panelDesktopPanel.Visible = true;
+        }
 
+        public void hidePnls()
+        {
+            pnlBenefits.Visible = false;
+            pnlEmployee.Visible = false;
+            panelDesktopPanel.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            pnlAttendanceLeave.Visible = true;
-
+            hidePnls();
+            pnlEmployee.Visible = true;
 
             try
             {
                 using (SqlConnection connection = Connector.GetConnection())
                 {
-                    //MessageBox.Show("Success");
                     SqlCommand command = new SqlCommand("SELECT * FROM Employee", connection);
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataTable dataTable = new DataTable();
@@ -71,16 +78,6 @@ namespace SDA_DBMS_Project.Forms
         }
 
         private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPcalculation_Click(object sender, EventArgs e)
         {
 
         }
@@ -104,13 +101,13 @@ namespace SDA_DBMS_Project.Forms
                     SqlCommand command = new SqlCommand("sp_insert_employee", connection);
                     command.CommandType = CommandType.StoredProcedure;
 
-                    command.Parameters.AddWithValue("@FirstName", textEmployeeId.Text);
-                    command.Parameters.AddWithValue("@LastName", textWokingDays.Text);
-                    command.Parameters.AddWithValue("@DepartmentID", int.Parse(textPresentDays.Text));
-                    command.Parameters.AddWithValue("@Position", textAbsentDays.Text);
-                    command.Parameters.AddWithValue("@JoinDate", DateTime.Parse(textLeaveDays.Text));
-                    command.Parameters.AddWithValue("@TotalWorkingHours", float.Parse(textLateArival.Text));
-                    command.Parameters.AddWithValue("@AverageAttendanceHours", float.Parse(textRegularHrs.Text));
+                    command.Parameters.AddWithValue("@FirstName", textFirstName.Text);
+                    command.Parameters.AddWithValue("@LastName", textLastName.Text);
+                    command.Parameters.AddWithValue("@DepartmentID", int.Parse(textDepartmentId.Text));
+                    command.Parameters.AddWithValue("@Position", textPosition.Text);
+                    command.Parameters.AddWithValue("@JoinDate", DateTime.Parse(textJoinDate.Text));
+                    command.Parameters.AddWithValue("@TotalWorkingHours", float.Parse(textTotalHours.Text));
+                    command.Parameters.AddWithValue("@AverageAttendanceHours", float.Parse(textAverageHours.Text));
                     command.ExecuteNonQuery();
 
                     MessageBox.Show("Data succesfully inserted");
@@ -130,40 +127,15 @@ namespace SDA_DBMS_Project.Forms
             }
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btndelete_Click(object sender, EventArgs e)
         {
             try
             {
                 using (SqlConnection connection = Connector.GetConnection())
                 {
-                    if (!string.IsNullOrEmpty(textEmployeeDel.Text))
+                    if (!string.IsNullOrEmpty(textEmployeeId.Text))
                     {
-                        string employeeId = textEmployeeDel.Text;
+                        string employeeId = textEmployeeId.Text;
 
                         try
                         {
@@ -193,6 +165,173 @@ namespace SDA_DBMS_Project.Forms
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred while deleting employee data: " + ex.Message);
+            }
+        }
+
+        private void btnUpdateEmployee_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = Connector.GetConnection())
+                {
+                    SqlCommand command = new SqlCommand("sp_UpdateEmployee", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("@EmployeeID", int.Parse(textEmployeeId.Text));
+
+                    if (!string.IsNullOrEmpty(textFirstName.Text))
+                        command.Parameters.AddWithValue("@FirstName", textFirstName.Text);
+                    else
+                        command.Parameters.AddWithValue("@FirstName", DBNull.Value);
+
+                    if (!string.IsNullOrEmpty(textLastName.Text))
+                        command.Parameters.AddWithValue("@LastName", textLastName.Text);
+                    else
+                        command.Parameters.AddWithValue("@LastName", DBNull.Value);
+
+                    // Add more parameters and corresponding textboxes here
+
+                    if (!string.IsNullOrEmpty(textDepartmentId.Text))
+                        command.Parameters.AddWithValue("@DepartmentID", int.Parse(textDepartmentId.Text));
+                    else
+                        command.Parameters.AddWithValue("@DepartmentID", DBNull.Value);
+
+                    if (!string.IsNullOrEmpty(textPosition.Text))
+                        command.Parameters.AddWithValue("@Position", textPosition.Text);
+                    else
+                        command.Parameters.AddWithValue("@Position", DBNull.Value);
+
+                    if (!string.IsNullOrEmpty(textJoinDate.Text))
+                        command.Parameters.AddWithValue("@JoinDate", DateTime.Parse(textJoinDate.Text));
+                    else
+                        command.Parameters.AddWithValue("@JoinDate", DBNull.Value);
+
+                    if (!string.IsNullOrEmpty(textTotalHours.Text))
+                        command.Parameters.AddWithValue("@TotalWorkingHours", decimal.Parse(textTotalHours.Text));
+                    else
+                        command.Parameters.AddWithValue("@TotalWorkingHours", DBNull.Value);
+
+                    if (!string.IsNullOrEmpty(textAverageHours.Text))
+                        command.Parameters.AddWithValue("@AverageAttendanceHours", decimal.Parse(textAverageHours.Text));
+                    else
+                        command.Parameters.AddWithValue("@AverageAttendanceHours", DBNull.Value);
+
+                    command.ExecuteNonQuery();
+
+                    command.ExecuteNonQuery();
+
+                    MessageBox.Show("Data succesfully updated");
+
+                    SqlCommand selectCommand = new SqlCommand("SELECT * FROM Employee", connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(selectCommand);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    gridAttendanceLeave.DataSource = dataTable;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while updating employee data: " + ex.Message);
+            }
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = Connector.GetConnection())
+                {
+                    SqlCommand command = new SqlCommand("sp_InsertBenefitsManagement", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("@BenefitID", txtBenefitId.Text);
+                    command.Parameters.AddWithValue("@EmployeeID", txtEmployeeId.Text);
+                    command.Parameters.AddWithValue("@BenefitType", txtBenefitType.Text);
+                    command.Parameters.AddWithValue("@Description", txtBenefitType.Text);
+                    command.Parameters.AddWithValue("@StartDate", DateTime.Parse(txtStartDate.Text));
+                    command.Parameters.AddWithValue("@EndDate", DateTime.Parse(txtEndDate.Text));
+                    command.Parameters.AddWithValue("@Amount", decimal.Parse(txtAmount.Text)); command.ExecuteNonQuery();
+
+                    MessageBox.Show("Data succesfully inserted");
+
+                    SqlCommand selectCommand = new SqlCommand("SELECT * FROM BenefitsManagement", connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(selectCommand);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    gridBenefitsManagement.DataSource = dataTable;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while inserting benefits data: " + ex.Message);
+            }
+        }
+
+        private void btnBenefits_Click(object sender, EventArgs e)
+        {
+            hidePnls();
+            pnlBenefits.Visible = true;
+
+            try
+            {
+                using (SqlConnection connection = Connector.GetConnection())
+                {
+                    SqlCommand command = new SqlCommand("SELECT * FROM BenefitsManagement", connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    gridBenefitsManagement.DataSource = dataTable;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while displaying Leave Usage View: " + ex.Message);
+            }
+        }
+
+        private void btnUpdateBenefit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = Connector.GetConnection())
+                {
+                    SqlCommand command = new SqlCommand("sp_UpdateBenefitManagement", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("@BenefitID", txtBenefitId.Text);
+                    command.Parameters.AddWithValue("@EmployeeID", int.Parse(textEmployeeId.Text));
+
+                    if (!string.IsNullOrEmpty(txtStartDate.Text))
+                        command.Parameters.AddWithValue("@StartDate", DateTime.Parse(txtStartDate.Text));
+
+                    if (!string.IsNullOrEmpty(txtEndDate.Text))
+                        command.Parameters.AddWithValue("@EndDate", DateTime.Parse(txtEndDate.Text));
+
+                    if (!string.IsNullOrEmpty(txtAmount.Text))
+                        command.Parameters.AddWithValue("@Amount", decimal.Parse(txtAmount.Text));
+
+                    command.ExecuteNonQuery();
+
+                    MessageBox.Show("Data succesfully deleted");
+
+                    SqlCommand selectCommand = new SqlCommand("SELECT * FROM BenefitsManagement", connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(selectCommand);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    gridBenefitsManagement.DataSource = dataTable;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while inserting benefits data: " + ex.Message);
             }
         }
     }
